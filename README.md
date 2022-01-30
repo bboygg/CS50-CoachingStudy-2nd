@@ -2,8 +2,13 @@
 
 ## Introduction
 
-네이버 커넥트 재단에서 진행하는 CS50 코칭스터디 2기를 2021.01.11 ~ 2021.02.26 (6주간) 참여했습니다. 
-스터디 개요 링크: https://post.naver.com/viewer/postView.nhn?volumeNo=30116615&memberNo=34635212
+네이버 커넥트 재단에서 진행하는 CS50 코칭스터디 2기를 리드부스터로 참여했습니다. 
+
+- 수업 커리큘럼: cs50 강의 + 부스트코스 개별/팀 미션 + 코치 피드백
+- 기간: 2021.01.11 ~ 2021.02.26 (6 weeks)
+- 스터디 링크: https://post.naver.com/viewer/postView.nhn?volumeNo=30116615&memberNo=34635212
+
+
 
 ## Table of Contents
 
