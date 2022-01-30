@@ -1,0 +1,2627 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ko" itemscope="" itemtype="http://schema.org/Article"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- #breadcrumb:boostcourse/common/_head.gsp -->
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta http-equiv="Cache-Control" content="max-age=86400, public">
+<meta http-equiv="origin-trial" content="Ati2DWxlgboPVi6vklPLcKgvC/IgtfpOtYAvD8L+1jONtKz6NAFzU4c+2yCTCypQPs4MNTbytrfX4JlQBsk73g8AAACGeyJvcmlnaW4iOiJodHRwczovL2Vkd2l0aC5vcmc6NDQzIiwiZmVhdHVyZSI6IkRpc2FibGVEaWZmZXJlbnRPcmlnaW5TdWJmcmFtZURpYWxvZ1N1cHByZXNzaW9uIiwiZXhwaXJ5IjoxNjM5NTI2Mzk5LCJpc1N1YmRvbWFpbiI6dHJ1ZX0=">
+
+	<meta name="robots" content="noindex, nofollow">
+
+
+
+	
+		<meta property="og:url" content="http://www.boostcourse.org/study-cs50-2nd/lecture/357738">
+	
+		<meta property="og:type" content="article">
+	
+		<meta property="og:title" content="CS50 코칭스터디 2기">
+	
+		<meta property="og:description" content="부스트코스 무료 강의">
+	
+		<meta property="og:image" content="https://cphinf.pstatic.net/mooc/20201217_240/1608196232998Ol2zw_PNG/1.png">
+	
+		<meta property="og:site_name" content="boostcourse : 부스트코스">
+	
+		<meta property="fb:app_id" content="763242397621125">
+	
+
+	
+		<meta name="keywords" content="&quot;CS50 코칭스터디 2기, 부스트코스, 코칭스터디 ,부스트코스 ,컴퓨터사이언스기초 ,데이비드말란 ,boostcourse ,비전공 ,컴퓨터과학 ,CS50코칭스터디">
+	
+		<meta name="description" content="CS50 코칭스터디 2기 ">
+	
+
+	
+		<meta itemprop="name" content="CS50 코칭스터디 2기">
+	
+		<meta itemprop="description" content=" - 부스트코스">
+	
+		<meta itemprop="image" content="">
+	
+
+
+<!-- serverURL : https://www.boostcourse.org -->
+<!-- i18n locale : en -->
+<!-- en -->
+<!-- US -->
+<!-- BOOSTCRS -->
+
+
+	<link rel="apple-touch-icon" sizes="180x180" href="https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="512x512" href="https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/android-chrome-512x512.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="https://ssl.pstatic.net/static/m/mooc/p/partner/boostcrs/android-chrome-192x192.png">
+
+
+<link rel="stylesheet" href="./🚀 Data Structure-week6_files/plugin.css" type="text/css">
+<link rel="stylesheet" href="./🚀 Data Structure-week6_files/boostcourse_common.css" type="text/css">
+
+	
+		<link rel="stylesheet" href="./🚀 Data Structure-week6_files/edwith.css" type="text/css">
+		<link rel="stylesheet" href="./🚀 Data Structure-week6_files/nanumsquare_webfont.css" type="text/css">
+	
+	
+	
+
+<link rel="stylesheet" href="./🚀 Data Structure-week6_files/prism.css" type="text/css">
+<link rel="stylesheet" href="./🚀 Data Structure-week6_files/codemirror.css" type="text/css">
+
+<script type="text/javascript" async="" src="./🚀 Data Structure-week6_files/js"></script><script type="text/javascript" async="" src="./🚀 Data Structure-week6_files/js(1)"></script><script async="" src="./🚀 Data Structure-week6_files/analytics.js"></script><script async="" src="./🚀 Data Structure-week6_files/gtm.js"></script><script src="./🚀 Data Structure-week6_files/all.js" async="" crossorigin="anonymous"></script><script src="./🚀 Data Structure-week6_files/all(1).js"></script>
+<script src="./🚀 Data Structure-week6_files/html5shiv.min.js"></script>
+<script src="./🚀 Data Structure-week6_files/respond.min.js"></script>
+<script src="./🚀 Data Structure-week6_files/nclktag.js"></script>
+<script>
+    var nsc = 'edwith.all';
+    var ccsrv = 'cc.naver.com';
+    var nclk_evt = 3;
+    nclk_do();
+</script>
+
+    <!-- Google Tag Manager -->
+    
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+        var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+        j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-KN69ZML');</script>
+    
+    <!-- // Google Tag Manager -->
+
+    
+        <title>CS50 코칭스터디 2기 &gt; 🚀 자료구조 : boostcourse</title>
+    
+<style type="text/css" data-fbcssmodules="css:fb.css.base css:fb.css.dialog css:fb.css.iframewidget css:fb.css.customer_chat_plugin_iframe">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#043b87;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}
+.fb_mpn_mobile_landing_page_slide_out{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_out_from_left{animation-duration:200ms;animation-name:fb_mpn_landing_page_slide_out_from_left;transition-timing-function:ease-in}.fb_mpn_mobile_landing_page_slide_up{animation-duration:500ms;animation-name:fb_mpn_landing_page_slide_up;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_in{animation-duration:300ms;animation-name:fb_mpn_bounce_in;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out{animation-duration:300ms;animation-name:fb_mpn_bounce_out;transition-timing-function:ease-in}.fb_mpn_mobile_bounce_out_v2{animation-duration:300ms;animation-name:fb_mpn_fade_out;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_from_left{animation-duration:300ms;animation-name:fb_bounce_in_from_left;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_from_left{animation-duration:300ms;animation-name:fb_bounce_out_from_left;transition-timing-function:ease-in}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}@keyframes fb_mpn_landing_page_slide_out{0%{margin:0 12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;margin:0 24px;width:60px}}@keyframes fb_mpn_landing_page_slide_out_from_left{0%{left:12px;width:100% - 24px}60%{border-radius:18px}100%{border-radius:50%;left:12px;width:60px}}@keyframes fb_mpn_landing_page_slide_up{0%{bottom:0;opacity:0}100%{bottom:24px;opacity:1}}@keyframes fb_mpn_bounce_in{0%{opacity:.5;top:100%}100%{opacity:1;top:0}}@keyframes fb_mpn_fade_out{0%{bottom:30px;opacity:1}100%{bottom:0;opacity:0}}@keyframes fb_mpn_bounce_out{0%{opacity:1;top:0}100%{opacity:.5;top:100%}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_from_left{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}50%{transform:scale(1.03, 1.03);transform-origin:bottom left}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_from_left{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom left}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom left}}@keyframes slideInFromBottom{0%{opacity:.1;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}@keyframes slideInFromBottomDelay{0%{opacity:0;transform:translateY(100%)}97%{opacity:0;transform:translateY(100%)}100%{opacity:1;transform:translateY(0)}}</style><link rel="stylesheet" type="text/css" id="u0" href="./🚀 Data Structure-week6_files/skin.min.css"></head>
+<body class="re_pack mac chrome chrome97"><link rel="stylesheet" href="./🚀 Data Structure-week6_files/katex.min.css" type="text/css">
+
+
+
+
+    
+
+
+    <!-- Google Tag Manager (noscript) -->
+    
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KN69ZML"
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+    <!-- End Google Tag Manager (noscript) -->
+
+<input type="hidden" id="__PARTNER_CODE" value="BOOSTCRS">
+<input type="hidden" id="__PARTNER_COLOR" value="#00caf9">
+<input type="hidden" id="__ADMIN_PARTNER_CODE" value="">
+<input type="hidden" id="__FILEUPLOAD_DOMAIN" value="//upload.boostcourse.org">
+<input type="hidden" id="__FILEUPLOAD_ENDPOINT" value="//upload.boostcourse.org/uploadManager/upload">
+<input type="hidden" id="__USER_ROLE" value="ROLE_STUDENT">
+<input type="hidden" id="__USER_PRIORITY" value="2">
+<input type="hidden" id="__USER_ID" value="935716">
+<input type="hidden" id="__COURSE_ID" value="12134">
+<input type="hidden" id="__COURSE_OPEN_DAY" value="">
+<input type="hidden" id="__COURSE_CLOSE_DAY" value="">
+<input type="hidden" id="__COURSE_URI_PATH" value="study-cs50-2nd">
+<input type="hidden" id="__CURRENT_DATE" value="2022.01.30">
+<input type="hidden" id="__MESSAGE_TITLE" value="Notification">
+
+    <input type="hidden" id="__LOCALE_LANGUAGE" value="ko">
+
+<input type="hidden" id="__IS_SHARE_PARTNER_CODE" value="false">
+<input type="hidden" id="__IS_PRIVATE_PARTNER" value="false">
+<input type="hidden" id="__IS_BOOST_COURSE_PARTNER" value="true">
+<input type="hidden" id="__IS_WHALE_CLASS" value="false">
+<input type="hidden" id="__IS_BIZ_CLASS" value="false">
+<input type="hidden" id="__IS_MOBILE" value="false">
+<input type="hidden" id="__I18N_RESOURCES_PATH" value="/i18n/">
+<input type="hidden" id="__COURSE_TERM_TYPE" value="basic">
+<input type="hidden" id="__RESOURCE_VERSION" value="?220128_6e7db910">
+<input type="hidden" id="__CONTROLLER_TYPE" value="lecture">
+<input type="hidden" id="__GITLAB_URL" value="https://gitlab.edwith.org">
+<input type="hidden" id="__EDWITH_PC_URL" value="https://www.edwith.org">
+<input type="hidden" id="__EDWITH_MOBILE_URL" value="https://m.edwith.org">
+<input type="hidden" id="__EDWITH_API_URL" value="https://api.edwith.org">
+<input type="hidden" id="__CBOX_STATIC_DOMAIN" value="https://ssl.pstatic.net/static.cbox">
+<input type="hidden" id="__CBOX_API_DOMAIN" value="https://apis.naver.com/commentBox/cbox8">
+<input type="hidden" id="__CBOX_TICKET" value="mooc">
+<input type="hidden" id="__STANDBY_CAMPAIGN_DOMAIN" value="https://standby-campaign.naver.com">
+
+    <input type="hidden" id="__MESSAGE_CODE" value="">
+
+<script src="./🚀 Data Structure-week6_files/vendor.compressed.min.js"></script>
+<script src="./🚀 Data Structure-week6_files/_head.entry.browserfied.min.js"></script>
+<script type="text/javascript" src="./🚀 Data Structure-week6_files/wcslog.js"></script>
+<script src="./🚀 Data Structure-week6_files/f1.1.0.8.js"></script>
+<script>
+    var title = document.title;
+    document.title = _.unescape(title);
+
+    var entry = require("/entries/common/_head.entry.js");
+    entry.initialize();
+
+    // 부코 진입시, 통합 회원 약관 동의하지 않았으면 약관 페이지로 이동하는 즉시 실행 함수
+    (function connectMemberIntegration() {
+        // 자체 로그인 서비스를 이용 하는 경우(snsCode가 있는 경우)를 제외하고는 통합 회원 전환을 진행함
+        if ("") {  // null, 빈 문자열 호환됨
+            return;
+        }
+
+        var integrationUserId = Number(935716);
+        var integrationAgree = Boolean(true);
+        var regrSecUserId = Number(0);
+
+        // 미로그인자 또는 약관에 이미 동의한 사람, 교수자가 직접 등록한 계정은 제외
+        if ((integrationUserId === 0) || integrationAgree || (regrSecUserId > 0)) {
+            return;
+        }
+
+        // 약관 페이지 및 오류 페이지 무한 리다이렉트 방지
+        if ((location.pathname.indexOf("/users/connect-integration") > -1)
+            || (location.pathname.indexOf("/notAuthorized") > -1)
+            || (location.pathname.indexOf("/notExist") > -1)
+            || (location.pathname.indexOf("/internalServerError") > -1)
+            || (location.pathname.indexOf("/readOnlyError") > -1)
+            || (location.pathname.indexOf("/badRequest") > -1)
+            || (location.pathname.indexOf("/methodNotAllowed") > -1)
+            || (location.pathname.indexOf("/neoid/doChainingLogin") > -1)) {
+            return;
+        }
+
+        location.href = ("/users/connect-integration?returnUrl=" + encodeURI(location.href));
+    }());
+
+
+    
+        
+        if(!wcs_add) var wcs_add = {};
+        wcs_add["wa"] = "3d48cd39225150";
+        wcs_do();
+
+        
+        
+    
+
+    
+    function diff_minutes(dt2, dt1) {
+        var diff =(dt2.getTime() - dt1.getTime()) / 1000;
+        diff /= 60;
+        return Math.abs(Math.round(diff));
+    }
+
+    //오늘 하루만 유지되도록 쿠키 Minute 설정
+    function getStandbyCookieTime() {
+        var dt1 = new Date();
+
+        var dt2 = new Date(dt1);
+        dt2.setDate(dt1.getDate() + 1);
+        dt2.setHours(0,0,0,0);
+
+        var diffMinute =  diff_minutes(dt2, dt1);
+        if(diffMinute <= 0) {
+            return 24 * 60
+        } else {
+            return diffMinute;
+        }
+    }
+
+    var htInfo = {
+        serviceId : "edwith_BOOSTCRS",
+        seqApi : "https://standby-campaign.naver.com/",
+        heartBeatApi : "https://standby-campaign.naver.com/",
+        homeUrl : "https://edwith.org",
+        cookieTime : getStandbyCookieTime()
+    };
+
+    var oSequenceManager = new SequenceManager({
+        serviceId : htInfo.serviceId,
+        apiHost: htInfo.seqApi,
+        cookieTime: htInfo.cookieTime, //minute 단위
+        successCallback : function(response){
+            //시퀀스 호출이 성공 하였을 경우 heartbeat 요청 시작~
+            oHeartbeat.start();
+        },
+        failCallback : function(response) {
+        },
+        errorCallback : function(error) {
+            //호출 시 오류가 발생 하였을 경우 3초 후 시퀀스 호출
+            setTimeout(oSequenceManager.requestSequence , 3000);
+        }
+    });
+
+    var oHeartbeat = new Heartbeat(oSequenceManager,{
+        serviceId: htInfo.serviceId,
+        apiHost: htInfo.heartBeatApi,
+        soldoutCallback: function(response) {
+        },
+        errorCallback : function(response) {
+            //에러가 발생했을 경우 순번 삭제 후 아무것도 하지 않음
+        },
+        successRun : true //대기열 진입 시에도 계속 heartbeat 호출할 필요가 있을 경우 true(상품 품절 체크 등의 이슈)
+    });
+
+    //dom 로드된 후 아래 코드 호출
+    //oSequenceManager.requestSequence();
+</script>
+
+
+    <input type="hidden" id="GA_VIEW_ID" value="UA-93980439-1">
+
+
+
+    <input type="hidden" id="GA_USER_ID" value="0000935716">
+    <input type="hidden" id="GA_DIMENSION01" value="NEXT"> 
+
+
+    <input type="hidden" id="GA_DIMENSION02" value="BOOSTCRS"> 
+    <input type="hidden" id="GA_DIMENSION03" value="study-cs50-2nd"> 
+    <input type="hidden" id="GA_DIMENSION04" value="STUDENT"> 
+    <input type="hidden" id="GA_DIMENSION07" value="ALWAYS_CLOSED"> 
+    <input type="hidden" id="GA_DIMENSION08" value="C_LEC"> 
+    <input type="hidden" id="GA_DIMENSION09" value="357738"> 
+
+<input type="hidden" id="GA_DIMENSION05" value="BOOSTCRS"> 
+<input type="hidden" id="GA_DIMENSION06" value="PC_WEB"> 
+
+<script>
+    
+		
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    
+
+    (function() {
+        function gaGetInfo() {
+            var gaInfo = {
+                viewId: document.getElementById('GA_VIEW_ID').value,
+                userId: document.getElementById('GA_USER_ID').value,
+                dimension01: document.getElementById('GA_DIMENSION01').value,
+                dimension02: document.getElementById('GA_DIMENSION02').value,
+                dimension03: document.getElementById('GA_DIMENSION03').value,
+                dimension04: document.getElementById('GA_DIMENSION04').value,
+                dimension05: document.getElementById('GA_DIMENSION05').value,
+                dimension06: document.getElementById('GA_DIMENSION06').value,
+                dimension07: document.getElementById('GA_DIMENSION07').value,
+                dimension08: document.getElementById('GA_DIMENSION08').value,
+                dimension09: document.getElementById('GA_DIMENSION09').value
+            };
+
+            return gaInfo;
+        }
+
+
+        function gaHitPageView() {
+            var gaInfo = gaGetInfo();
+            var ga = window.ga;
+
+            ga('create', gaInfo.viewId, 'auto');
+            ga('set', 'userId', gaInfo.userId);
+            ga('set', 'dimension1', gaInfo.dimension01);
+            ga('set', 'dimension2', gaInfo.dimension02);
+            ga('set', 'dimension3', gaInfo.dimension03);
+            ga('set', 'dimension4', gaInfo.dimension04);
+            ga('set', 'dimension5', gaInfo.dimension05);
+            ga('set', 'dimension6', gaInfo.dimension06);
+            ga('set', 'dimension7', gaInfo.dimension07);
+            ga('set', 'dimension8', gaInfo.dimension08);
+            ga('set', 'dimension9', gaInfo.dimension09);
+
+            ga('send', 'pageview');
+        }
+
+        function gaSimpleHitPageView(page) {
+            ga('set', 'page', page);
+            ga('send', 'pageview');
+        }
+
+        window.gaHitPageView = gaSimpleHitPageView;
+
+        
+        /*ga('send', {
+            hitType: 'event',
+            eventCategory: 'video',
+            eventAction: 'play',
+            eventLabel: 'media play'
+        });*/
+
+        gaHitPageView();
+    })();
+</script>
+
+
+<div class="modal_wrap ce_preview" id="_modal_wrap" style="display:none">
+	<div class="modal_inner">
+	    <!-- 애니메이션 영역 [??] -->
+	    <div class="modal_container" data-md-content=""></div>
+	    <div class="modal_dimmed"><iframe frameborder="0" src="./🚀 Data Structure-week6_files/saved_resource.html" title="For bug fixes"></iframe></div>
+    </div>
+</div>
+<div id="u_skip">
+    
+        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#gnb" onclick="document.getElementById(&#39;gnb&#39;).tabIndex=-1;document.getElementById(&#39;gnb&#39;).focus();return false;"><span>Go to personal menu</span></a>
+    
+    
+    
+    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#snb" onclick="document.getElementById(&#39;snb&#39;).tabIndex=-1;document.getElementById(&#39;snb&#39;).focus();return false;"><span>Go to sub menu</span></a>
+    
+    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#content" onclick="document.getElementById(&#39;content&#39;).tabIndex=-1;document.getElementById(&#39;content&#39;).focus();return false;"><span>Go to text</span></a>
+</div>
+<!-- #breadcrumb:layouts/course.gsp -->
+<div id="wrap">
+    <!-- 로고 2개있는 경우 및 부스트코스, edwith 분기 -->
+    
+        <header id="header" class="default_login mooc">
+            
+<!-- #breadcrumb:boostcourse/common/_gnb_course_menu.gsp -->
+
+
+    
+    
+    
+        
+        
+        
+    
+    <h1 class="logo">
+        <a href="https://www.boostcourse.org/">
+            <img width="" height="16px" src="./🚀 Data Structure-week6_files/new_boostcourse_16.svg" alt="boostcourse">
+        </a>
+    </h1>
+
+<!-- 신규 boostcourse gnb 시작 -->
+<div class="layout_in " data-wrap-gnb-menu="" data-is-boostcourse="true">
+        <ul class="gnb ly_type2" id="gnb">
+        
+            <!-- [D] 활성화 li class="on" 추가 -->
+            <!-- 운영 강좌/클래스 -->
+            
+                <!-- 나의 강좌/클래스 -->
+                <li class="ic" data-gnb-menu="join">
+                    <a href="javascript:void(0);" data-markup-gnb=".ly_dropdown">
+                        <span>My course</span>
+                    </a>
+                    <div class="ly_dropdown">
+                        <div class="ly_top">
+                            <h2 class="tit">My course</h2>
+                            <a href="https://www.boostcourse.org/myPage/home" class="more">View All</a>
+                        </div>
+                        <div class="scroll_wrap" data-scroll-wrap="join">
+                            <ul class="my_class" data-list="course" data-gnb-course-list="join"></ul>
+                            <div class="more_button" style="padding: 24px 24px 0px; display: none;" data-course-more-div="join">
+                                <button type="button" class="add_button" data-course-more-btn="join">
+                                    More <span class="num" data-course-more-num="join"></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            
+            
+            <li class="ic" data-gnb-menu="myNews">
+                <a href="javascript:void(0);" data-markup-gnb=".ly_dropdown">
+                    <span>My news</span>
+                </a>
+                <span class="count"><em>0</em></span>
+                <div class="ly_dropdown">
+                    <div class="ly_top">
+                        <h2 class="tit">My news</h2>
+                    </div>
+                    <div class="scroll_wrap" data-scroll-wrap="news">
+                        <ul class="my_news" data-list="news"></ul>
+                        <div class="more_button" style="padding: 24px 24px 0 24px; display:none" data-news-more-div="">
+                            <button type="button" class="add_button" data-news-more-btn="">
+                                More <span class="num" data-news-more-num=""></span>
+                            </button>
+                        </div>
+                    </div>
+                    <button type="button" class="btn_jumpbar"><span>D-Day</span></button>
+                </div>
+            </li>
+            
+            <li class="ic todo" data-gnb-menu="myTodo">
+                <a href="javascript:void(0);" data-markup-gnb=".ly_dropdown">
+                    <span>To do</span>
+                </a>
+                <span class="count"><em>0</em></span>
+                <div class="ly_dropdown">
+                    <div class="ly_top">
+                        <h2 class="tit">To do</h2>
+                    </div>
+                    <div class="scroll_wrap" data-scroll-wrap="todo">
+                        <ul class="noti_list" data-list="todo"></ul>
+                        <div class="more_button" style="padding: 24px 24px 0 24px; display:none" data-todo-more-div="">
+                            <button type="button" class="add_button" data-todo-more-btn="">
+                                More <span class="num" data-todo-more-num=""></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        
+        <li class="search">
+            <div class="group">
+                <div class="input">
+                    <span class="input_area"><input type="text" name="searchQuery" id="input_srch" data-claus-search-text=""></span>
+                    <span class="added"><button type="button" class="btn" id="btn_srch" data-claus-search-btn=""><span class="sr_only">검색</span></button></span>
+                </div>
+            </div>
+        </li>
+        <!-- #breadcrumb:boostcourse/common/_loginbox.gsp -->
+
+<li class="nickname ly_right" data-gnb-menu="myLogin">
+    <a href="javascript:void(0);" data-markup-gnb=".ly_dropdown" title="My menu">
+        
+        <span class="thumb bgnone">
+            <img data-gnb-profile-image="" src="./🚀 Data Structure-week6_files/Hl1BistVTpO5w6b8U1SB.jpg" width="32" height="32" alt="9조리드조지고">
+        </span>
+        
+    </a>
+
+    <div class="ly_dropdown">
+        <ul>
+            
+            
+            <li><a href="https://www.boostcourse.org/myPage/home" title="My course">My course</a></li>
+            <li><a href="https://www.boostcourse.org/myPage/recentlyPlayedList" title="Recently played videos">Recently played videos</a></li>
+            
+            <li><a href="https://www.boostcourse.org/userInfo/base-info" title="Personal Information">Personal Information</a></li>
+            
+            <li><a href="https://www.boostcourse.org/logout" title="Log out">Log out</a></li>
+        </ul>
+    </div>
+</li>
+
+
+
+    </ul>
+</div>
+<!-- 신규 boostcourse gnb 끝 -->
+
+<input type="hidden" id="__isLogged" value="org.nhnnext.mooc.user.SecUser : 935716">
+
+
+    
+
+<script src="./🚀 Data Structure-week6_files/_gnbmenu.entry.browserfied.min.js"></script>
+<script>
+    $(document).ready(function() {
+        var entry = require("/entries/common/_gnbmenu.entry.js");
+        entry.initialize({
+            isLogged : $.trim( $("#__isLogged").val() ) === "" ? false : true,
+            isClosedPartner : false,
+            courseId: '12134',
+            userId: '935716'
+        });
+    });
+</script>
+
+<!--[D] 파트너 컬러 적용되는 부분입니다. -->
+<style>
+    #container .hd_txt > .inner {
+        background-color: #00caf9;
+    }
+
+    #container .inc_sub .hd_txt .lecture_sub_tool .count_info {
+        color: #00caf9;
+    }
+
+    #header .gnb > li > .count em {
+        color: #00caf9;
+    }
+
+    #container .lnb #snb nav li:hover a {
+        border-color: #00caf9;
+    }
+
+    #snb nav > ul > li.notice::after {
+        background-color: #00caf9;
+    }
+
+    #snb nav > ul > li .icon svg path {
+        fill: #00caf9;
+    }
+
+    #snb.manage nav > ul > li ul li:hover a, #snb.manage nav > ul > li ul li.active a {
+        color: #00caf9;
+    }
+
+    #container .lnb #snb nav > ul > li.active a {
+        border-color: #00caf9;
+    }
+
+    #container .lnb #snb nav > ul > li.active .menu {
+        color: #00caf9;
+    }
+
+    #container .lnb #snb .widget h2 {
+        color: #00caf9;
+    }
+
+    #content .page_header .group_r .it.it_added input:focus {
+        border: 1px solid #00caf9 !important;
+    }
+
+    .class_manager > ul > li .chapter:hover,
+    .class_manager > ul > li .add.active .add_input:hover,
+    .class_manager > ul > li .sub > li:hover,
+    .class_manager > ul > li .sub > li:focus {
+        border-color: #00caf9;
+    }
+
+    .class_manager>ul>li .sub>li>a>span[class^=ico].end {
+        background-color: #00caf9;
+    }
+    .class_manager>ul>li .sub>li>a>span[class^=ico].end::before {
+        background-color: #00caf9;
+    }
+
+    .class_manager.manage > ul > li .sub > li > span[class^=ico],
+    .class_manager > ul > li .add .add_input > div span[class^=ico] {
+        background-color: #00caf9;
+    }
+
+    .class_manager > ul li .util ul button.selected {
+        color: #00caf9;
+    }
+
+    .class_manager > ul > li .add .add_type button:hover,
+    .class_manager > ul > li .add .add_type button:focus {
+        border-color: #00caf9;
+    }
+
+    .class_manager .slc_area .btn:hover,
+    .class_manager .slc_area .btn:focus {
+        background-color: #00caf9;
+    }
+
+    #snb nav > ul > li ol li a:before {
+        border-color: #00caf9;
+    }
+
+    #snb nav > ul > li ol li.done a::before {
+        background-color: #00caf9;
+    }
+
+    #snb nav > ul > li ol li.now a {
+        color: #00caf9;
+    }
+
+    #snb nav > ul > li.video a:before {
+        background-color: #00caf9;
+    }
+
+    .group_lr .btn.clr {
+        background-color: #00caf9;
+        border-color: #00caf9;
+    }
+
+    .quiz .quiz_add_wrap .q_header .q li.on a {
+        background-color: #00caf9;
+    }
+
+    .quiz .quiz_add_wrap .q_header .q li.current:after {
+        background-color: #00caf9;
+    }
+
+    .quiz .quiz_add_wrap .q_header .total_score strong {
+        color: #00caf9;
+    }
+
+    .ick .radio.checked,
+    .ick .checkbox.checked {
+        background-color: #00caf9;
+    }
+
+    .mg_info .ick .radio.checked {
+        background-color: #00caf9;
+    }
+
+    .mg_info .ick .radio.checked::after {
+        background-color: #00caf9 !important;
+    }
+
+    .forum .forum_list_new .forum_summary .em_tag {
+        background-color: #00caf9;
+    }
+
+    .chosen-container:hover, .chosen-container:focus,
+    .chosen-container.chosen-with-drop {
+        border-color: #00caf9;
+    }
+
+    .chosen-container .chosen-results li.result-selected {
+        color: #00caf9;
+    }
+
+    .ic_ad {
+        color: #00caf9;
+    }
+
+    .paginate .page_list .selected,
+    .paginate .page_list a:hover {
+        color: #00caf9;
+    }
+
+    .paginate2 .btn_prve:hover,
+    .paginate2 .btn_next:hover {
+        border: 1px solid #00caf9;
+    }
+
+    .paginate2 .btn_prve:hover .icon svg path,
+    .paginate2 .btn_next:hover .icon svg path {
+        stroke: #00caf9;
+    }
+
+    .share .sns_area .btn_type17:hover,
+    .share .sns_area .btn_type17.active {
+        border-color: #00caf9;
+    }
+
+    .share .btn_lecture_like:hover,
+    .share .btn_lecture_like.on {
+        background-color: #00caf9;
+    }
+
+    .yellow {
+        color: #00caf9;
+    }
+
+    .nav_text li button.btn.tit.on {
+        color: #00caf9;
+    }
+    .nav_text li button.tit.on i svg path{
+        stroke:#00caf9;
+    }
+    body.full .ipt_group .btn.btn_type1.clr {
+        background-color: #00caf9;
+    }
+    body.full #container #content .ick.login_keep .checkbox.checked::after {
+        background-color: #00caf9;
+    }
+    body.re_pack .paginate .page_list .selected,
+    body.re_pack .paginate .page_list a:hover {
+        color: #00caf9;
+    }
+    #container .hd_txt>.inner {
+        background-color: #00caf9;
+    }
+    #container .inc_sub .hd_txt .lecture_sub_tool .count_info {
+        color: #00caf9;
+    }
+
+    #container .lnb #snb nav li:hover a {
+        border-color: #00caf9;
+    }
+    #snb nav>ul>li.notice::after {
+        background-color: #00caf9;
+    }
+
+    .btn.btn_type14 {
+        background-color: #00caf9;
+    }
+    #container .lnb #snb nav>ul>li.active a {
+        border-color: #00caf9;
+    }
+    #container .lnb #snb nav>ul>li.active .menu {
+        color: #00caf9;
+    }
+    #container .lnb #snb .widget h2 {
+        color: #00caf9;
+    }
+    #content .page_header .group_r .it.it_added input:focus {
+        border: 1px solid#00caf9 !important;
+    }
+    .class_manager>ul>li .chapter:hover,
+    .class_manager > ul > li .add.active .add_input:hover,
+    .class_manager>ul>li .sub>li:hover,
+    .class_manager>ul>li .sub>li:focus {
+        border-color: #00caf9;
+    }
+    .class_manager>ul>li .sub>li>a>span[class^=ico].end {
+        background-color: #00caf9;
+    }
+    .class_manager>ul>li .sub>li>span[class^=ico].end::before {
+        background-color: #00caf9;
+    }
+    .class_manager.manage>ul>li .sub>li>span[class^=ico],
+    .class_manager>ul>li .add .add_input>div span[class^=ico] {
+        background-color: #00caf9;
+    }
+    .class_manager>ul li .util ul button.selected {
+        color: #00caf9;
+    }
+    .class_manager>ul>li .add .add_type button:hover,
+    .class_manager>ul>li .add .add_type button:focus {
+        border-color: #00caf9;
+    }
+    .class_manager>ul>li .sub>li>a>span[class^=ico].end::before {
+        background-color: #00caf9;
+    }
+    #snb nav>ul>li ol li a:before {
+        border-color: #00caf9;
+    }
+    #snb nav>ul>li ol li.done a::before {
+        background-color: #00caf9;
+    }
+    #snb nav>ul>li ol li.now a {
+        color: #00caf9;
+    }
+    #snb .nav_menu>ul>li.video a .icon svg path{
+        fill:#00caf9;
+    }
+    #snb nav>ul>li.video a:before {
+        background-color: #00caf9;
+    }
+    .quiz .quiz_add_wrap .q_header .q li.on a {
+        background-color: #00caf9;
+    }
+    .quiz .quiz_add_wrap .q_header .q li.current:after {
+        background-color: #00caf9;
+    }
+    .quiz .quiz_add_wrap .q_header .total_score strong {
+        color: #00caf9;
+    }
+    .ick .radio.checked,
+    .ick .checkbox.checked {
+        background-color: #00caf9;
+    }
+    .mg_info .ick .radio.checked {
+        background-color: #00caf9;
+    }
+    .mg_info .ick .radio.checked::after {
+        background-color: #00caf9 !important;
+    }
+    .forum .forum_list .forum_summary .em_tag {
+        background-color: #00caf9;
+    }
+    .chosen-container:hover,.chosen-container:focus,
+    .chosen-container.chosen-with-drop {
+        border-color:#00caf9;
+    }
+    .chosen-container .chosen-results li.highlighted {
+        color:#00caf9;
+    }
+    .ic_ad {
+        color: #00caf9;
+    }
+    body.re_pack .paginate .page_list .selected,
+    body.re_pack .paginate .page_list a:hover {
+        color: #00caf9;
+    }
+    .paginate4 .btn_prve:hover,
+    .paginate4 .btn_next:hover {
+        border:1px solid #00caf9;
+    }
+    .paginate4 .btn_prve:hover .icon svg path,
+    .paginate4 .btn_next:hover .icon svg path {
+        stroke:#00caf9;
+    }
+    .share .sns_area .btn_type17:hover,
+    .share .sns_area .btn_type17.active{
+        border-color:#00caf9;
+    }
+    .share .btn_lecture_like:hover,
+    .share .btn_lecture_like.on {
+        background-color:#00caf9;
+    }
+    .re_pack #header .gnb.ly_type2 .ly_dropdown .ly_top + .scroll_wrap> ul li .ico_bx {
+        background-color:#00caf9;
+    }
+    .re_pack #header .gnb.ly_type2 .ly_dropdown .ly_top + .scroll_wrap> ul li .read {
+        background-color:#ccd1d0;
+    }
+    .re_pack #header .gnb.ly_type2 .ly_dropdown .ly_top + .scroll_wrap> ul li .list_title em {
+        color:#00caf9;
+    }
+    .re_pack #header .gnb.ly_type2 .ly_dropdown .ly_top + .scroll_wrap> ul li .info em {
+        color:#00caf9;
+    }
+    .re_pack .lecture_term dl dd .em {
+        color:#00caf9;
+    }
+    .re_pack .class_manager .slc_area .add_top_wrap .ick .checkbox.checked {
+        background-color:#00caf9;
+    }
+    .re_pack #content .page_header .reverse_wrap .ick .checkbox.checked {
+        background-color:#00caf9;
+    }
+    body.re_pack .quiz_info dl dt .em, body.re_pack .task_info dl dt .em {
+        color:#00caf9;
+    }
+</style>
+        </header>
+    
+
+    
+        <div id="container">
+            <!-- 신규 boostcourse LNB -->
+            
+<!--[D] 관리자 권한이면서 bbs를 클릭하지 않았을 경우 true-->
+
+
+
+<div class="lnb">
+    <!-- 신규 boostcourse LNB SNB -->
+    <div class="inc_sub default">
+        <div class="hd_txt">
+            <div class="inner">
+                <div class="label_box">
+                    
+
+                <!-- [D] 강좌 난이도에 따라 .level에 class 추가 필요
+                                기본 basic 추가
+                                심화 advanced 추가
+                                입문은 class 추가 없음 -->
+                    
+                </div>
+                <!-- [D] 강좌명이 51~90자인 경우 h2 class에 word_max 추가 -->
+                <h2 class="">
+                
+                    <a href="https://www.boostcourse.org/study-cs50-2nd/home" class="NPI=a:title" id="_courseName">CS50 코칭스터디 2기</a>
+                
+                </h2>
+
+                
+                
+                
+                    <div class="profile">
+                        
+                            <!-- [D] 이미지 노출시 class="bgnone" 추가 -->
+                            <span class="thumb bgnone"><img src="./🚀 Data Structure-week6_files/boostcourse.jpg" width="32" height="32" alt="임시 이미지"></span>
+                        
+                        <span class="name">부스트코스</span>
+
+                        
+                    </div>
+                
+
+            <!-- 공유하기 -->
+            <div class="sns_area _sns_area">
+    <button type="button" class="btn sns_share" data-sns-share=""><span class="sr_only">Share</span></button>
+    <div class="sns_layer type2" data-sns-layer="">
+        <div class="inner">
+            <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="ico_url" data-type="urlCopy" data-clipboard-text="www.boostcourse.org/study-cs50-2nd">Copy URL</a>
+            
+        </div>
+        
+    </div>
+</div>
+    
+<div id="_band_share_content" style="display:none">CS50 코칭스터디 2기</div>
+<div id="_twitter_share_content" style="display:none">CS50 코칭스터디 2기</div>
+<div style="width:1px;height:1px;font-size:0;line-height:0;color:transparent"><span id="urlCopy">http://www.boostcourse.org/study-cs50-2nd/lecture/357738</span></div>
+<script src="./🚀 Data Structure-week6_files/_sns.share.service.entry.browserfied.min.js"></script>
+<script>
+$(document).ready(function(){
+    var courseUrl = 'https://www.boostcourse.org/study-cs50-2nd';
+    var entry = require("/entries/common/_sns.share.service.entry.js");
+    var htData = {
+            facebook : [courseUrl, '763242397621125', 'http://www.boostcourse.org/popupClose'],
+            twitter : [courseUrl, $("#_twitter_share_content").text(),  '',  ''],
+            googlePlus : [courseUrl],
+            band : [courseUrl, $("#_band_share_content").text()],
+            url: courseUrl
+        };
+    entry.initialize($('._sns_area'), htData);
+});
+</script>
+            <!-- // 공유하기 -->
+            </div>
+            <div class="lecture_sub_tool">
+                
+                    <div class="count_info">
+                        <span class="count_like"><em>Thumb up</em> 5801</span>
+                        <span class="count_observe"><em>Learner</em> 1336</span>
+                    </div>
+                    <div class="manage_box">
+                        
+
+                        
+                    </div>
+                
+            </div>
+        </div>
+        <button class="open_menu"><span class="blind">전체 메뉴 열기</span></button>
+    </div>
+
+    
+        <!-- 신규 boostcourse SNB -->
+        <div id="snb" class="default ">
+            
+            
+
+<nav class="nav_menu">
+    <h2 class="sr_only">Sub menu</h2>
+    <ul class="NE=a:lmn">
+    
+    
+        
+    
+
+    <!-- [D] 선택된 메뉴에 .active 추가, 구분선 추가시 <li class="hr"></li> 추가-->
+    
+        
+        
+            <li class="notice ">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/notices/72149" title="CS50 코칭스터디란?🚀" class="NPI=a:notice">
+                    <!-- new 아이콘 일단 제거(나중에 스펙 확정되면 추가)
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                            <path fill="#108F6B" fill-rule="nonzero" d="M1 0C.448 0 0 .448 0 1v14c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1H1zm3 12V4h2l4 5V4h2v8h-2L6 7v5H4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </i>
+                    -->
+                    <span class="menu">CS50 코칭스터디란?🚀</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="notice ">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/notices/72006" title="CS50 2기 공지글💡" class="NPI=a:notice">
+                    <!-- new 아이콘 일단 제거(나중에 스펙 확정되면 추가)
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                            <path fill="#108F6B" fill-rule="nonzero" d="M1 0C.448 0 0 .448 0 1v14c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1H1zm3 12V4h2l4 5V4h2v8h-2L6 7v5H4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </i>
+                    -->
+                    <span class="menu">CS50 2기 공지글💡</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/72577" title="CS50 2기 코치단👩‍🏫 " class="NPI=a:discuss">
+                    <span class="menu">CS50 2기 코치단👩‍🏫 </span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/72151" title="2기 부스터 소통공간🧑‍💻" class="NPI=a:discuss">
+                    <span class="menu">2기 부스터 소통공간🧑‍💻</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/78983" title="개인 미션 공간🙋🏻" class="NPI=a:discuss">
+                    <span class="menu">개인 미션 공간🙋🏻</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/78522" title="2기 리드부스터 소통공간🕵️" class="NPI=a:discuss">
+                    <span class="menu">2기 리드부스터 소통공간🕵️</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/78628" title="2기 부스터 문의사항 🤔" class="NPI=a:discuss">
+                    <span class="menu">2기 부스터 문의사항 🤔</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/78919" title="⚠️ 학습 인증 안내" class="NPI=a:discuss">
+                    <span class="menu">⚠️ 학습 인증 안내</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            <li class="notice ">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/notices/72578" title="▼  미션공개&amp;라이브특강 ▼  " class="NPI=a:notice">
+                    <!-- new 아이콘 일단 제거(나중에 스펙 확정되면 추가)
+                    <i class="icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                            <path fill="#108F6B" fill-rule="nonzero" d="M1 0C.448 0 0 .448 0 1v14c0 .552.448 1 1 1h14c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1H1zm3 12V4h2l4 5V4h2v8h-2L6 7v5H4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </i>
+                    -->
+                    <span class="menu">▼  미션공개&amp;라이브특강 ▼  </span>
+                </a>
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72186?isDesc=false" title="0주차_오리엔테이션" class="NPI=a:lectures">
+                    <span class="menu">0주차_오리엔테이션</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">오리엔테이션 (영상을 보셨다면 하트🧡를 꾸욱- 눌러주세요!)</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326407?isDesc=false">1. CS50 코칭스터디란</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326409?isDesc=false">2. 부스터 학습 공간</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326410?isDesc=false">3. 학습과정 및 학습 인증 방법</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326411?isDesc=false">4. 권장학습 사이클</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326412?isDesc=false">5. 부스터 완주조건</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/326413?isDesc=false">6. 리드부스터용 추가 안내</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">가이드 문서</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317831?isDesc=false">CS50 코칭스터디 부스터 가이드문서</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72001?isDesc=false" title="1주차_컴퓨팅사고" class="NPI=a:lectures">
+                    <span class="menu">1주차_컴퓨팅사고</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 부스터 여러분~  설레는 1주차 (1월 11일~ 1월 15일) 학습 시작해볼까요? 🧡</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317857?isDesc=false">🚀 컴퓨팅사고(Computational Thinking, Scratch)</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">미션을 확인했다면 하트🧡를 꾸욱- 눌러주세요!</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/288749?isDesc=false">💎1주차 미션!(1월 14일 목요일 오후 6시까지 제출)</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72015?isDesc=false" title="2주차_C언어" class="NPI=a:lectures">
+                    <span class="menu">2주차_C언어</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 부스터 여러분~ 설레는 2주차(1월 18일 ~ 1월 22일) 학습 시작해볼까요?🧡</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/336989?isDesc=false">🚀 C언어</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">미션을 확인했다면 하트🧡를 꾸욱- 눌러주세요!</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/336992?isDesc=false">💎 2주차 미션!(1월 21일 목요일 오후 6시까지 제출)</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/339730?isDesc=false">✨2주차 미션 해설✨</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72016?isDesc=false" title="3주차_배열" class="NPI=a:lectures">
+                    <span class="menu">3주차_배열</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 부스터 여러분~ 설레는 3주차 (1월 25일 ~ 1월 29일) 학습 시작해볼까요?🧡</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/304863?isDesc=false">🚀 배열</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/304822?isDesc=false">💎 3주차 미션! (1월 28일 목요일 오후 6시까지 제출)</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72017?isDesc=false" title="4주차_알고리즘" class="NPI=a:lectures">
+                    <span class="menu">4주차_알고리즘</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 부스터 여러분~ 뜨거운 4주차 (2월 1일 ~ 2월 5일) 학습 시작해볼까요?🧡</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/343954?isDesc=false">🚀알고리즘</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317820?isDesc=false">💎 4주차 미션! (2월 4일 목요일 오후 6시 마감)</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72018?isDesc=false" title="5주차_메모리" class="NPI=a:lectures">
+                    <span class="menu">5주차_메모리</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 부스터 여러분~ 뜨거운 5주차 (2월 15일 ~ 2월 19일) 학습 시작해볼까요?🧡</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/348354?isDesc=false">🚀 메모리</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317824?isDesc=false">💎 5주차 미션! (2월 18일 목요일 6시 마감)</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            
+            
+            <li class="active">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/72019?isDesc=false" title="6주차_자료구조" class="NPI=a:lectures">
+                    <span class="menu">6주차_자료구조</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">🧡 6주차(2월 22일 ~ 2월 26일) 🧡 부스터여러분~ 마지막까지 힘내요!!!</span>
+                                
+                                    
+                                    
+                                    
+                                    <li class="now"><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738?isDesc=false">🚀 자료구조</a></li>
+                                
+                                    
+                                    
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317827?isDesc=false">💎 6주차 미션(2월 25일 목요일 오후 6시 마감)</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/72021" title="🎼 코딩은 랜선을 타고" class="NPI=a:discuss">
+                    <span class="menu">🎼 코딩은 랜선을 타고</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/75703" title="DK코치 (team1~10)" class="NPI=a:discuss">
+                    <span class="menu">DK코치 (team1~10)</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/75704" title="ㄴ코치질문🙋🏻" class="NPI=a:discuss">
+                    <span class="menu">ㄴ코치질문🙋🏻</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/forums/75705" title="ㄴ미션제출📝" class="NPI=a:discuss">
+                    <span class="menu">ㄴ미션제출📝</span>
+                </a>
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/75755?isDesc=false" title="수료증" class="NPI=a:lectures">
+                    <span class="menu">수료증</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">본 퀴즈는 수료증과 관계가 없습니다. :) 플랫폼 기능상 세팅한 퀴즈이니 무시하셔도 됩니다.</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/311250?isDesc=false">본 과정 수료여부는 별도 세팅되며 퀴즈를 풀지 않으셔도 됩니다.</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+        
+        
+            <li class="hr"></li>
+        
+    
+        
+        
+            
+            
+            <li class="">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/joinLectures/84082?isDesc=false" title="CS50 코칭스터디 후기 설문" class="NPI=a:lectures">
+                    <span class="menu">CS50 코칭스터디 후기 설문</span>
+                </a>
+                <!--[D] .btn_open 클릭시 상위 li 에 .active 추가해주세요.-->
+                <button class="btn_open"><span class="blind">강좌 전체목록보기</span></button>
+                <div>
+                <!--[D] 수강완료한 강좌는 li.done 클래스 추가-->
+                <!--[D] 현재 수강중인 강좌는 li.now 클래스 추가-->
+                <!-- lecture.contType에 따라 url 분기처리 -->
+                
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">리워드를 위한 개인정보 수집</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351648?isDesc=false">개인정보 수집 동의서</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/354517?isDesc=false">네이버 페이 발송을 위한 네이버 계정 개인정보 수집 동의서</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">기본 만족도 조사</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351381?isDesc=false">기본 만족도 조사 1</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351387?isDesc=false">기본 만족도 조사 2</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/355068?isDesc=false">커뮤니케이션 만족도 조사</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">세부 만족도 조사</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351439?isDesc=false">미션 만족도 조사</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351445?isDesc=false">코딩코치 만족도 조사</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351457?isDesc=false">조 구성 및 활동 만족도 조사</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351447?isDesc=false">라이브코치 &amp; 라이브강의 만족도 조사</a></li>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class="done "><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351458?isDesc=false">플랫폼 만족도 조사</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">중도 포기 부스터 만족도 조사(해당자만)</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/351436?isDesc=false">중도 포기 부스터 만족도 조사</a></li>
+                                
+                            </ol>
+                        
+                    
+                        
+                            <ol class="lect_2dep">
+                                <span class="title">네이버페이(계정 변경 희망자만)</span>
+                                
+                                    
+                                    
+                                    
+                                        
+                                    
+                                    <li class=""><a href="https://www.boostcourse.org/study-cs50-2nd/quiz/397138?isDesc=false">네이버 페이 발송을 위한 네이버 계정 개인정보 수집 동의서</a></li>
+                                
+                            </ol>
+                        
+                    
+                    </div>
+                
+            </li>
+        
+    
+    </ul>
+    
+        <ul class="ad" id="menuUl">
+            
+            
+            
+                
+                    <li><a href="https://www.boostcourse.org/study-cs50-2nd/grade"><span>View grade</span></a></li>
+                
+            
+        </ul>
+    
+    
+    
+</nav>
+
+
+<script src="./🚀 Data Structure-week6_files/_snbmenu.entry.browserfied.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        var entry = require("/entries/common/_snbmenu.entry.js");
+        // entry.initialize();
+
+        entry.initialize({
+            data : {
+                course: "study-cs50-2nd"
+            },
+            title : 'CS50 코칭스터디 2기',
+            useQuestion : false,
+            courseUri: 'study-cs50-2nd',
+            isShareGuest : false,
+            isBizclassGuest : false,
+            searchable: true,
+            requestSuccessMessage: ''
+        });
+    });
+</script>
+
+
+
+            
+
+            
+        </div>
+    
+</div>
+
+<script src="./🚀 Data Structure-week6_files/_lnbmenu.entry.browserfied.min.js"></script>
+<script>
+    $(document).ready(function() {
+
+        var entry = require("/entries/common/_lnbmenu.entry.js");
+        entry.initialize({
+            'courseId': '12134',
+            'courseUriPath': 'study-cs50-2nd',
+            'heartbeatApiDomain': 'https://standby-campaign.naver.com'
+        });
+
+        
+    });
+</script>
+            <div id="content">
+                
+<!-- #breadcrumb:lecture/show.gsp -->
+<section class="page forum _warp_lecture_content" data-hasmobile="true">
+    
+    
+    
+    
+
+    <!--page_header-->
+    <header class="page_header">
+        <div class="group_lr mab10">
+            
+                <div class="group_r">
+                    
+                        <div class="group_r">
+                            <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="alarm_set_btn disabled" style="display:none" data-btn-alarm-set=""> </a>
+                        </div>
+                    
+                </div>
+            
+            <div class="group_l">
+                <h1 class="page_title "> 🚀 자료구조</h1>
+            </div>
+        </div>
+    </header>
+    <!--//page_header-->
+
+    
+
+    <div class="user_info_view ce ce_view" style="display: block;">
+        
+        <input type="hidden" id="__MATERIALS" data-selector="materials" value="[{&quot;id&quot;:964586,&quot;title&quot;:&quot;&quot;,&quot;text&quot;:&quot;&lt;article style=\&quot;display: block;\&quot; data-mce-style=\&quot;display: block;\&quot;&gt;&lt;div data-selector=\&quot;contents\&quot;&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 14pt;\&quot; data-mce-style=\&quot;font-size: 14pt;\&quot;&gt;&lt;strong&gt;부스터 여러분~ Boost my week&amp;nbsp;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;strong&gt;&#39;&lt;\u002fstrong&gt;&lt;strong&gt;◡&lt;\u002fstrong&gt;&lt;strong&gt;&#39;&amp;nbsp;&lt;\u002fstrong&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;color: #339966; font-size: 12pt;\&quot; data-mce-style=\&quot;color: #339966; font-size: 12pt;\&quot;&gt;&lt;strong&gt;부.마.윅 마지막&amp;nbsp;6주차입니다.&amp;nbsp;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;\&quot;모두를 위한 컴퓨터 과학(CS50 2019) 6. 자료구조\&quot;&amp;nbsp;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;color: #339966; font-size: medium;\&quot; data-mce-style=\&quot;color: #339966; font-size: medium;\&quot;&gt;&lt;span style=\&quot;caret-color: #339966;\&quot; data-mce-style=\&quot;caret-color: #339966;\&quot;&gt;마지막 주차는 대망의 &lt;strong&gt;자료구조&lt;\u002fstrong&gt;인데요!&lt;\u002fspan&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;color: #339966; font-size: medium;\&quot; data-mce-style=\&quot;color: #339966; font-size: medium;\&quot;&gt;&lt;span style=\&quot;caret-color: #339966;\&quot; data-mce-style=\&quot;caret-color: #339966;\&quot;&gt;이번주도 화이팅하셔서 유종의 미를 거두어 봅시다!!🔥&lt;\u002fspan&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;개별적으로 강좌를 수강하고 퀴즈를 풀고, 팀 별로 팀미션을 수행하여 목요일 오후 6시 전까지 코치별 게시판에 제출합니다.&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;그리고 금요일 오후 8시 라이브강의를 통해 한 주간의 학습을 마무리합니다.&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;hr&gt;&lt;p&gt;&amp;nbsp;&amp;nbsp;&lt;\u002fp&gt;&lt;\u002fdiv&gt;&lt;\u002farticle&gt;&lt;article style=\&quot;display: block;\&quot; data-mce-style=\&quot;display: block;\&quot;&gt;&lt;div data-selector=\&quot;contents\&quot;&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 18pt;\&quot; data-mce-style=\&quot;font-size: 18pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;color: #000000;\&quot; data-mce-style=\&quot;color: #000000;\&quot;&gt;[자료구조를 왜 공부해야 할까요?]&lt;\u002fspan&gt;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;저희가 자료구조를 왜 공부해야 할까요? 가장 피부에 와닿는 이유는 아무래도 취업때문이라고도 할 수 있습니다. 요즘 개발자로 취업하기 위해서는 대부분의 회사에서 코딩테스트를 요구하는데요!&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;코딩 테스트는 크게 두 가지 부류로 나눌 수 있습니다. &lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;1) 프로그래밍 과제를 내주고 요구사항에 맞게 프로그램을 잘 짰는지에 대한 테스트&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;2) 알고리즘이나 자료구조에 대한 문제를 내고 얼마나 효율적으로 잘 짤 수 있는지에 대한 테스트&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;그렇다면 자료구조는 전자에 필요할까요? 아니면 후자에 필요할까요?&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;정답은..! 둘 다 입니다.&lt;\u002fstrong&gt; 사실 취업을 위한 프로그래밍 과제를 짤 때나 실제 업무를 할 때 이번 강의에서 배운 링크드리스트나 해시테이블을 직접 손으로 하나하나 구현하지 않습니다. 대게 자바나 파이썬 등 어느 자체에서 제공하는 api를 사용해서 필요한 자료구조를 불러와서 사용하죠, 굳이 직접 구현해서 쓸 일도 없이 제공되는 api만 호출해서 쓰면되는데 왜 자료구조를 공부해야할까요? 답을 하기 전에, 자료구조에 대해서 알아봅시다.&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 18pt;\&quot; data-mce-style=\&quot;font-size: 18pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;color: #000000;\&quot; data-mce-style=\&quot;color: #000000;\&quot;&gt;[자료구조란?]&lt;\u002fspan&gt;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;자료구조란 컴퓨터에 자료를 효율적으로 저장하는 방식을 말하며 올바른 자료구조를 사용하는 것은 결국 메모리를 절약하고 수행시간을 절약하는 데 도움을 줄 수 있게 됩니다. 프로그래밍을 통해서 문제를 해결함에 있어서 자료구조는 필수적이라고 할 수 있는 것이죠. 어떤 자료구조를 선택하느냐에 따라서 수행시간이나 메모리 사용량이 급격하게 차이가 나기도 합니다. 따라서 자료구조를 공부하고 어떤 상황에 어떤 자료구조를 잘 쓸 수 있는지 이해한다는 것은 우리가 프로그램을 좀 더 효율적으로 짤 수 있고 문제 해결 능력을 높이는 데 크게 기여할 수 있기때문에 꼭 공부해야 한다고 볼 수 있습니다.&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;img src=\&quot;https://cphinf.pstatic.net/mooc/20210219_255/1613711387739V1ag8_PNG/mceclip0.png\&quot; data-mce-src=\&quot;https://cphinf.pstatic.net/mooc/20210219_255/1613711387739V1ag8_PNG/mceclip0.png\&quot;&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;초록창에 검색어를 입력하면 여러분이 검색어를 하나씩 타이핑 할 때마다 자동완성으로 추천 검색어가 뜨는 것을 보실 수 있을 겁니다. 이런 자동완성 같은 경우 여러분이 자료구조에서 배운 트라이를 쓰실 수가 있습니다.&amp;nbsp;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;물론 당연히 트라이만 딱 써서 구현하진 않았겠지만, 이런 자동완성을 완성기능을 구현하는 데 필요한 자료구조는 링크드리스트보다 트라이가 더 좋겠죠.&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;이런 식으로 실제 여러분이 현업에서 봤던 어떤 기능을 구현할 때 올바른 자료구조를 선택하느냐는 매우 중요한 문제고 올바른 자료구조를 선택함에 따라서 프로그램 효율과 성능에 많은 차이를 가져올 수 있게 될 것입니다.&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 18pt;\&quot; data-mce-style=\&quot;font-size: 18pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;color: #000000;\&quot; data-mce-style=\&quot;color: #000000;\&quot;&gt;[송태의 코치님께서 전하는 메세지💌]&lt;\u002fspan&gt;&lt;\u002fstrong&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: medium;\&quot; data-mce-style=\&quot;font-size: medium;\&quot;&gt;&lt;span style=\&quot;font-size: 18pt;\&quot; data-mce-style=\&quot;font-size: 18pt;\&quot;&gt;프로그래머가 된다는 것?&lt;\u002fspan&gt; &lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;혹은 프로그래밍을 배운다는 것은 쉽게 말해서 어떤 동작을 수행하기 위해 컴퓨터에 명령을 내리는 코드를 짠다는 것을 의미합니다. 그래서 어떻게 보면 경우에 따라서 매우 지루한 일일수 있습니다. 그리고 문제 없이 컴퓨터가 잘 돌아가도록 반복적으로 타이핑하는 지루한 일로 묘사될 수 있습니다. 사실 실제로도 프로그래밍 하는 과정이 즐겁고 재밌다고 하기보다는 시간의 압박과 과제의 압박에 많이 시달리게 되는 힘들고 지루하고 어려운 일이라고도 볼 수 있습니다.&lt;\u002fspan&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;게다가 사실 프로그래밍은 누구나 배울 수 있지만 누구에게나 재미있는 일이라고는 볼 수도 없습니다. 프로그래밍이 진짜 안맞는 사람들도 많죠. 누구나 가수가 될 수 있는 것도 아니고 누구나 UFC 로드 FC에서 경기할 수 있는 것이 아니듯 말이죠. 프로그래머가 된다고 해서 높은 페이가 보장되는 것도 아니고 적어도 한국에서 개발자라는 직업이 사회적으로도 특별히 인정받는 직업도 아닐 수 있는데요 &lt;em&gt;(아직까지는요..!)&lt;\u002fem&gt;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;하지만 저는 그럼에도 불구하고 프로그래머, 개발자, 프로그래밍 한다는 것은 너무나 매력적이고 재밌는 일이라고 생각합니다. 비록 개발의 과정이 지루하고 힘들고 짜증 날 때도 많지만 그 과정을 통해서 나오는 &lt;strong&gt;결과물&lt;\u002fstrong&gt;과, 결과물을 만들었다는 &lt;strong&gt;성취감이&amp;nbsp;&lt;\u002fstrong&gt;그 과정에서 오는 수많은 단점들을 상쇄하고도 남는다고 볼 수 있습니다.&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;여러분이 만든 개발의 결과로 나오는 제품을 전 세계 사람들이 쓸 수 있게 만드는 데 수많은 공장도 직원도 필요하지 않습니다. &lt;strong&gt;그저 컴퓨터와 개발자인 여러분만 있으면 됩니다.&lt;\u002fstrong&gt;&amp;nbsp;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;프로그래밍을 한다는 것, 개발자가 된다는 것은 프로그래밍이라는 도구를 통해서 세상에 크고 작은 문제들을 해결해 나가고 &lt;strong&gt;fun하고 cool하고 sexy한&lt;\u002fstrong&gt; 것들을 만들어 낼 수도 있다는 것을 의미하기도 합니다. 나아가 세상의 문제를 해결하고 나 자신에게 의미있는 것들을 만들어 낼 수 있습니다.&amp;nbsp;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;프로그래밍을 배움으로써 &lt;strong&gt;문제 해결자&lt;\u002fstrong&gt;이면서 &lt;strong&gt;창작자&lt;\u002fstrong&gt;이면서 &lt;strong&gt;혁신가&lt;\u002fstrong&gt;가 될 수 있습니다. 프로그래밍 세계에 첫 발을 내딛은 여러분들, 혹은 이미 프로그래밍의 경험이 있지만 가지고 있는 지식들을 다시 한번 정리하면서 새롭게 시작하시려는 여러분들이야말로 &lt;strong&gt;진정한 세상을 이롭게 하는 문제 해결자&lt;\u002fstrong&gt;가 되실 수 있다고 생각합니다. :)&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&amp;nbsp;&lt;br&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot; data-mce-style=\&quot;font-size: 12pt;\&quot;&gt;이번 CS50코칭스터디 마지막강의까지 오시느라 정말 고생 많으셨습니다. 프로그래밍이라는 연필로 여러분이 꿈꾸고 상상하셨던 바를 이루어 내실 수 있으리라 저는 믿어 의시치 않습니다.&amp;nbsp;여러분의 밝고 힘찬 미래를 응원합니다!&amp;nbsp;&lt;\u002fspan&gt;&lt;\u002fp&gt;&lt;p&gt;&lt;img src=\&quot;https://cphinf.pstatic.net/mooc/20210219_80/1613712381035mFzS9_PNG/mceclip0.png\&quot; data-mce-src=\&quot;https://cphinf.pstatic.net/mooc/20210219_80/1613712381035mFzS9_PNG/mceclip0.png\&quot;&gt;&lt;\u002fp&gt;&lt;\u002fdiv&gt;&lt;\u002farticle&gt;&quot;,&quot;isShowMaterial&quot;:false,&quot;isUploading&quot;:false,&quot;description&quot;:&quot;&quot;,&quot;orgLectureId&quot;:357738,&quot;isCode&quot;:false,&quot;filename&quot;:&quot;&quot;,&quot;type&quot;:&quot;Text&quot;,&quot;isLoaded&quot;:true}]">
+<input type="hidden" id="__COURSENAME" data-selector="courseName" value="study-cs50-2nd">
+<script src="./🚀 Data Structure-week6_files/naver_web_player_2016_min.js"></script>
+<script src="./🚀 Data Structure-week6_files/_material.entry.browserfied.min.js"></script>
+
+
+<style type="text/css">
+    .u_cbox .u_cbox_content_layer {
+        position: absolute;
+        left: 0;
+        bottom: auto;
+        width: 100%;
+        text-align: center;
+        z-index: 10;
+    }
+</style>
+
+<script>
+    $(document).ready(function(){
+        var entry = require("/entries/common/_material.entry.js");
+        entry.initialize({
+            welTarget: $(".ce_view"),
+            data: {
+                courseName: $("#__COURSENAME").val(),
+                materials: $.parseJSON($("#__MATERIALS").val()),
+                isEditable: false,
+                userId: '935716',
+                courseId: '12134',
+                lectureId: '357738',
+                videoType: 'LECTURE',    // 강의 상세페이지와 정보 페이지는 이 곳을 같이 사용하고 있네요.
+                videoTypeId: '357738',
+                isOpenAll: true,
+                liveInfo: {
+                    isLiveOpened: false,
+                    recentLiveStartTime: "",
+                    recentLiveEndTime: "",
+                    reservationStartTime: "",
+                    reservationEndTime: "",
+                    streamType: "NOVA",
+                    isShowLiveMaterial: true
+                }
+            }
+        });
+    });
+</script>
+<script src="./🚀 Data Structure-week6_files/ntsYoutubeConnecter.1.0.min.js"></script>
+    <article class="material_view material_text"><!-- #breadcrumb:item/template/material.text.html -->
+<div class="material_desc editor_reset" data-selector="contents"><article style="display: block;" data-mce-style="display: block;"><div data-selector="contents"><p><span style="font-size: 14pt;" data-mce-style="font-size: 14pt;"><strong>부스터 여러분~ Boost my week&nbsp;</strong></span><strong>'</strong><strong>◡</strong><strong>'&nbsp;</strong></p><p><span style="color: #339966; font-size: 12pt;" data-mce-style="color: #339966; font-size: 12pt;"><strong>부.마.윅 마지막&nbsp;6주차입니다.&nbsp;</strong></span></p><p><br></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;"><strong>"모두를 위한 컴퓨터 과학(CS50 2019) 6. 자료구조"&nbsp;</strong></span></p><p>&nbsp;<br></p><p>&nbsp;</p><p><span style="color: #339966; font-size: medium;" data-mce-style="color: #339966; font-size: medium;"><span style="caret-color: #339966;" data-mce-style="caret-color: #339966;">마지막 주차는 대망의 <strong>자료구조</strong>인데요!</span></span></p><p><span style="color: #339966; font-size: medium;" data-mce-style="color: #339966; font-size: medium;"><span style="caret-color: #339966;" data-mce-style="caret-color: #339966;">이번주도 화이팅하셔서 유종의 미를 거두어 봅시다!!🔥</span></span></p><p>&nbsp;</p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;"><strong>개별적으로 강좌를 수강하고 퀴즈를 풀고, 팀 별로 팀미션을 수행하여 목요일 오후 6시 전까지 코치별 게시판에 제출합니다.</strong></span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;"><strong>그리고 금요일 오후 8시 라이브강의를 통해 한 주간의 학습을 마무리합니다.</strong></span></p><p>&nbsp;<br></p><hr><p>&nbsp;&nbsp;</p></div></article><article style="display: block;" data-mce-style="display: block;"><div data-selector="contents"><p><span style="font-size: 18pt;" data-mce-style="font-size: 18pt;"><strong><span style="color: #000000;" data-mce-style="color: #000000;">[자료구조를 왜 공부해야 할까요?]</span></strong></span></p><p>&nbsp;<span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">저희가 자료구조를 왜 공부해야 할까요? 가장 피부에 와닿는 이유는 아무래도 취업때문이라고도 할 수 있습니다. 요즘 개발자로 취업하기 위해서는 대부분의 회사에서 코딩테스트를 요구하는데요!</span></p><p>&nbsp;<br></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">코딩 테스트는 크게 두 가지 부류로 나눌 수 있습니다. </span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">1) 프로그래밍 과제를 내주고 요구사항에 맞게 프로그램을 잘 짰는지에 대한 테스트</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">2) 알고리즘이나 자료구조에 대한 문제를 내고 얼마나 효율적으로 잘 짤 수 있는지에 대한 테스트</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">그렇다면 자료구조는 전자에 필요할까요? 아니면 후자에 필요할까요?</span></p><p>&nbsp;<br></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;"><strong>정답은..! 둘 다 입니다.</strong> 사실 취업을 위한 프로그래밍 과제를 짤 때나 실제 업무를 할 때 이번 강의에서 배운 링크드리스트나 해시테이블을 직접 손으로 하나하나 구현하지 않습니다. 대게 자바나 파이썬 등 어느 자체에서 제공하는 api를 사용해서 필요한 자료구조를 불러와서 사용하죠, 굳이 직접 구현해서 쓸 일도 없이 제공되는 api만 호출해서 쓰면되는데 왜 자료구조를 공부해야할까요? 답을 하기 전에, 자료구조에 대해서 알아봅시다.</span></p><p>&nbsp;<br></p><p><span style="font-size: 18pt;" data-mce-style="font-size: 18pt;"><strong><span style="color: #000000;" data-mce-style="color: #000000;">[자료구조란?]</span></strong></span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">자료구조란 컴퓨터에 자료를 효율적으로 저장하는 방식을 말하며 올바른 자료구조를 사용하는 것은 결국 메모리를 절약하고 수행시간을 절약하는 데 도움을 줄 수 있게 됩니다. 프로그래밍을 통해서 문제를 해결함에 있어서 자료구조는 필수적이라고 할 수 있는 것이죠. 어떤 자료구조를 선택하느냐에 따라서 수행시간이나 메모리 사용량이 급격하게 차이가 나기도 합니다. 따라서 자료구조를 공부하고 어떤 상황에 어떤 자료구조를 잘 쓸 수 있는지 이해한다는 것은 우리가 프로그램을 좀 더 효율적으로 짤 수 있고 문제 해결 능력을 높이는 데 크게 기여할 수 있기때문에 꼭 공부해야 한다고 볼 수 있습니다.</span></p><p><img src="./🚀 Data Structure-week6_files/mceclip0.png" data-mce-src="https://cphinf.pstatic.net/mooc/20210219_255/1613711387739V1ag8_PNG/mceclip0.png"></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">초록창에 검색어를 입력하면 여러분이 검색어를 하나씩 타이핑 할 때마다 자동완성으로 추천 검색어가 뜨는 것을 보실 수 있을 겁니다. 이런 자동완성 같은 경우 여러분이 자료구조에서 배운 트라이를 쓰실 수가 있습니다.&nbsp;</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">물론 당연히 트라이만 딱 써서 구현하진 않았겠지만, 이런 자동완성을 완성기능을 구현하는 데 필요한 자료구조는 링크드리스트보다 트라이가 더 좋겠죠.</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">이런 식으로 실제 여러분이 현업에서 봤던 어떤 기능을 구현할 때 올바른 자료구조를 선택하느냐는 매우 중요한 문제고 올바른 자료구조를 선택함에 따라서 프로그램 효율과 성능에 많은 차이를 가져올 수 있게 될 것입니다.</span></p><p>&nbsp;<br></p><p><span style="font-size: 18pt;" data-mce-style="font-size: 18pt;"><strong><span style="color: #000000;" data-mce-style="color: #000000;">[송태의 코치님께서 전하는 메세지💌]</span></strong></span></p><p><span style="font-size: medium;" data-mce-style="font-size: medium;"><span style="font-size: 18pt;" data-mce-style="font-size: 18pt;">프로그래머가 된다는 것?</span> <span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">혹은 프로그래밍을 배운다는 것은 쉽게 말해서 어떤 동작을 수행하기 위해 컴퓨터에 명령을 내리는 코드를 짠다는 것을 의미합니다. 그래서 어떻게 보면 경우에 따라서 매우 지루한 일일수 있습니다. 그리고 문제 없이 컴퓨터가 잘 돌아가도록 반복적으로 타이핑하는 지루한 일로 묘사될 수 있습니다. 사실 실제로도 프로그래밍 하는 과정이 즐겁고 재밌다고 하기보다는 시간의 압박과 과제의 압박에 많이 시달리게 되는 힘들고 지루하고 어려운 일이라고도 볼 수 있습니다.</span></span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">게다가 사실 프로그래밍은 누구나 배울 수 있지만 누구에게나 재미있는 일이라고는 볼 수도 없습니다. 프로그래밍이 진짜 안맞는 사람들도 많죠. 누구나 가수가 될 수 있는 것도 아니고 누구나 UFC 로드 FC에서 경기할 수 있는 것이 아니듯 말이죠. 프로그래머가 된다고 해서 높은 페이가 보장되는 것도 아니고 적어도 한국에서 개발자라는 직업이 사회적으로도 특별히 인정받는 직업도 아닐 수 있는데요 <em>(아직까지는요..!)</em></span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">하지만 저는 그럼에도 불구하고 프로그래머, 개발자, 프로그래밍 한다는 것은 너무나 매력적이고 재밌는 일이라고 생각합니다. 비록 개발의 과정이 지루하고 힘들고 짜증 날 때도 많지만 그 과정을 통해서 나오는 <strong>결과물</strong>과, 결과물을 만들었다는 <strong>성취감이&nbsp;</strong>그 과정에서 오는 수많은 단점들을 상쇄하고도 남는다고 볼 수 있습니다.</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">여러분이 만든 개발의 결과로 나오는 제품을 전 세계 사람들이 쓸 수 있게 만드는 데 수많은 공장도 직원도 필요하지 않습니다. <strong>그저 컴퓨터와 개발자인 여러분만 있으면 됩니다.</strong>&nbsp;</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">프로그래밍을 한다는 것, 개발자가 된다는 것은 프로그래밍이라는 도구를 통해서 세상에 크고 작은 문제들을 해결해 나가고 <strong>fun하고 cool하고 sexy한</strong> 것들을 만들어 낼 수도 있다는 것을 의미하기도 합니다. 나아가 세상의 문제를 해결하고 나 자신에게 의미있는 것들을 만들어 낼 수 있습니다.&nbsp;</span></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">프로그래밍을 배움으로써 <strong>문제 해결자</strong>이면서 <strong>창작자</strong>이면서 <strong>혁신가</strong>가 될 수 있습니다. 프로그래밍 세계에 첫 발을 내딛은 여러분들, 혹은 이미 프로그래밍의 경험이 있지만 가지고 있는 지식들을 다시 한번 정리하면서 새롭게 시작하시려는 여러분들이야말로 <strong>진정한 세상을 이롭게 하는 문제 해결자</strong>가 되실 수 있다고 생각합니다. :)</span></p><p>&nbsp;<br></p><p><span style="font-size: 12pt;" data-mce-style="font-size: 12pt;">이번 CS50코칭스터디 마지막강의까지 오시느라 정말 고생 많으셨습니다. 프로그래밍이라는 연필로 여러분이 꿈꾸고 상상하셨던 바를 이루어 내실 수 있으리라 저는 믿어 의시치 않습니다.&nbsp;여러분의 밝고 힘찬 미래를 응원합니다!&nbsp;</span></p><p><img src="./🚀 Data Structure-week6_files/mceclip0(1).png" data-mce-src="https://cphinf.pstatic.net/mooc/20210219_80/1613712381035mFzS9_PNG/mceclip0.png"></p></div></article></div></article></div>
+
+    
+
+    <div class="share NE=a:lec">
+        
+
+        <div class="group_lr">
+            <div class="group_l">
+                
+                
+    <div class="sns_area _content_sns_area">
+        <button type="button" class="btn btn_type17 bold" data-sns-share="">Share</button>
+        <!-- [D] 활성화 시 class="on"추가, URL 복사만 출력할 경우 class="type2 추가" -->
+        <div class="sns_layer type2" data-sns-layer="">
+            <div class="inner">
+                <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="ico_url" data-type="urlCopy" data-clipboard-text="http://www.boostcourse.org/study-cs50-2nd/lecture/357738">Copy URL</a>
+                
+            </div>
+            
+        </div>
+    </div>
+    <div id="_band_share_content" style="display:none">🚀 자료구조
+- 부스트코스</div>
+    <div id="_twitter_share_content" style="display:none">🚀 자료구조 - 부스트코스</div>
+
+    <script src="./🚀 Data Structure-week6_files/_sns.share.service.entry.browserfied.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            var entry = require("/entries/common/_sns.share.service.entry.js");
+            var snsShareContentHtData = {
+                facebook : ['http://www.boostcourse.org/study-cs50-2nd/lecture/357738', '763242397621125', 'http://www.boostcourse.org/popupClose'],
+                twitter : ['http://www.boostcourse.org/study-cs50-2nd/lecture/357738', $("#_twitter_share_content").text(),  '',  ''],
+                googlePlus : ['http://www.boostcourse.org/study-cs50-2nd/lecture/357738'],
+                band : ['http://www.boostcourse.org/study-cs50-2nd/lecture/357738', $("#_band_share_content").text()],
+                url: 'http://www.boostcourse.org/study-cs50-2nd/lecture/357738'
+            };
+            entry.initialize($('._content_sns_area'), snsShareContentHtData);
+        });
+    </script>
+
+                <!-- // 공유하기 -->
+                
+                    <button class="btn_lecture_like " data-btn-like="" data-count-num="75">
+                        Thumb up
+
+                        
+                            75
+                        
+                    </button>
+                
+                <!-- // 좋아요 -->
+            </div>
+        </div>
+    </div>
+
+    <div class="new_boost_btm" style="bottom: 0px;">
+        <div class="group_lr">
+            
+                <div class="group_r">
+                    
+                    
+                        <button type="button" class="btn btn_type15 clr" data-selector="tglLearningCompletion" data-role="completed">
+                            Completed
+                        </button>
+                    
+                    <div class="bubb type3" data-wrap="tooltip" style="display:none;top:-68px;right:40px;" data-tooltip-end="">
+                        <strong>You've completed the course.</strong>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="ico_clse" data-btn-tooltip-close="">
+                            Close
+                        </a>
+                    </div>
+
+                    <div class="bubb type3" data-wrap="tooltip" style="display:none;top:-88px;right:40px;" data-tooltip-next="">
+                        <strong>You've completed the course.</strong>
+                        <p><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#">Check out the next lesson</a></p>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="ico_clse" data-btn-tooltip-close="">
+                            Close
+                        </a>
+                    </div>
+
+                    <div class="bubb type3" data-wrap="tooltip" style="display:none;top:-68px;right:40px;" data-tooltip-alert="">
+                        <p data-tooltip-alert-msg=""></p>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="ico_clse" data-btn-tooltip-close="">
+                            Close
+                        </a>
+                    </div>
+                </div>
+            
+            <!--페이지네비게이션 : 이전글/다음글-->
+            
+<!-- #breadcrumb:lecture/_pageNavigation.gsp -->
+
+<!--목록URL-->
+
+    
+
+
+
+<!--이전 URL/Title -->
+
+
+<!--다음 URL/Title -->
+
+    
+    
+    
+        
+    
+
+
+<!--페이지네비게이션 : 이전글/다음글/목록보기-->
+<div class="group_l">
+    <div class="paginate4">
+        <!--[D] 비활성화 될 시 .disable 클래스 추가해 주세요.-->
+        <div class="pagin l">
+            
+                <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738" class="btn_prve disabled" data-btn-prev="" style="pointer-events: none;">
+            
+                <i class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#25292F" stroke-width="1.5" d="M16 4l-8 8 8 8"></path>
+                    </svg>
+                </i>
+                <span class="blind"></span>
+            </a>
+        </div>
+        <div class="pagin r">
+            
+                <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/317827/?isDesc=false" class="btn_next" data-btn-next="">
+            
+                <i class="icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                        <path stroke="#2A2C2F" stroke-width="1.5" d="M8 20l8-8-8-8"></path>
+                    </svg>
+                </i>
+                <span class="blind">💎 6주차 미션(2월 25일 목요일 오후 6시 마감)</span>
+            </a>
+        </div>
+    </div>
+</div>
+<!--//페이지네비게이션 -->
+            <!--//페이지네비게이션 -->
+        </div>
+    </div>
+
+    
+    
+    <div class="cmt_group" id="comment">
+        <nav class="nav_tab2">
+            <ul>
+                
+                    <li class="active" data-btn-comment=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" id="_wrap_comment_count">댓글 1</a></li>
+                
+                
+                    <li data-btn-forum=""><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" id="_wrap_forum_count">연관 토론 85</a></li>
+                
+            </ul>
+        </nav>
+
+        
+        <section class="comment" id="_wrap_comment" style="">
+
+            <h3 class="sr_only">comment</h3>
+            <!--댓글 등록 폼-->
+            <div class="se_wrap" data-editor=""><div class="se_editor_wrap sub_modal_wrap"><!-- #breadcrumb:mini.editor/template/mini.editor.html -->
+<div class="comment_wrap" data-wrap="content">
+    
+        <div id="mceu_0" class="mce-tinymce mce-container mce-panel" hidefocus="1" tabindex="-1" role="application" style="visibility: hidden; border-width: 1px;"><div id="mceu_0-body" class="mce-container-body mce-stack-layout"><div id="mceu_1" class="mce-edit-area mce-container mce-panel mce-stack-layout-item mce-first mce-last" hidefocus="1" tabindex="-1" role="group" style="border-width: 1px 0px 0px;"><iframe id="mce_0_ifr" frameborder="0" allowtransparency="true" title="서식 있는 텍스트 편집기 입니다. ALT-F9를 누르면 메뉴, ALT-F10를 누르면 툴바, ALT-0을 누르면 도움말을 볼 수 있습니다." src="javascript:&quot;&quot;" style="width: 100%; height: 100px; display: block;" src="./🚀 Data Structure-week6_files/saved_resource(1).html"></iframe></div></div></div><textarea style="height: 70px; display: none;" class="mce_editor" placeholder="댓글을 입력하세요." id="mce_0" aria-hidden="true"></textarea>
+    
+</div>
+<div class="se_editor_area" style="display:none" data-wrap="preview"></div>
+<div class="comment_footer_wrap">
+    <div class="btn_area_l" data-btn="other">
+        <span class="img" data-selector="Image">
+            <span class="ico_i_image">이미지 첨부</span>
+            <input id="upload_input1" type="file" name="myFile" title="이미지 첨부" class="_upload_input" accept=".png, .jpg, .jpeg, .gif">
+        </span>
+        <span class="file" data-selector="File">
+            <span class="ico_i_file">파일 첨부</span>
+            <input id="upload_input2" type="file" name="myFile" title="파일 첨부" class="_upload_input" accept=".pdf, .pptx, .ppt, .docx, .doc, .hwp, .xls, .xlsx, .xlsm, .accdb, .txt, .swift, .py, .csv, .zip, .apk, .rar, .7z, .tar, .alz, .mp3, .aac, .wma, .wmv, .tif">
+        </span>
+        <span class="katex" data-plugin="Katex">
+            <button type="button" data-markup=".sub_modal" class="btn bdnone ico_i_katex">수식</button>
+        </span>
+    </div>
+    <div class="btn_area_r">
+        
+        
+        <button type="button" class="btn btn_type1 on" data-btn="save">저장</button>
+    </div>
+</div>
+<div class="sub_modal math" style="display:none" data-wrap="katex"><!-- #breadcrumb:plugin/template/NKatex.html -->
+<h5 class="tit">수식 입력<a href="https://www.boostcourse.org/help/navigator?helpName=MATH_SYMBOL" target="_blank" title="도움말" class="ico_help2">도움말</a></h5>
+<div class="inner">
+    <label class="it stretch">
+        <span class="ph">수식을 입력하세요.</span>
+        <textarea cols="30" rows="5" style="height:66px" data-global-placeholder=".ph"></textarea>
+    </label>
+    <div class="math_preview"></div>
+    <div class="ta_r mat20"><button type="button" data-btn="add" class="btn btn_type2">추가</button></div>
+</div>
+<button type="button" class="close ico_clse">닫기</button>
+</div></div></div>
+            <!--//댓글 등록 폼-->
+            <div class="comment_list">
+                <ul id="_wrap_comment_list" style="display: block;"><li><!--  #breadcrumb:comment/template/comment.view.html -->
+
+<div class="comment_area" data-comment-id="1281827">
+    
+        <div class="thumb bgnone">
+            
+            <img src="./🚀 Data Structure-week6_files/KakaoTalk_Photo_2020-10-16-17-05-59.png" width="40" height="40" alt="3조김병연">
+            
+        </div>
+    
+    <div class="comment_view_mode" data-wrap-comment="">
+        <div class="comment_info ">
+            <ul>
+                <li>
+                    <span class="username" data-username="">3조김병연</span>
+                    
+                    
+                </li>
+                <li><span data-elapsed-time="">2021.02.24 20:16</span></li>
+                
+                    <li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="btn_tx" data-btn-report="" data-course-id="study-cs50-2nd" data-post-id="1281827" data-post-type="COMMENT">신고</a></li>
+                
+                
+            </ul>
+        </div>
+        <div class="comment_desc">
+            <p data-content=""></p><p>마지막 주차까지 오게되었네요. 송태의 코치님께도 감사드리고 부트스 코스에도 감사드립니다..!</p><p></p>
+        </div>
+    </div>
+    <!--첨부파일 삽입 영역-->
+    <div class="se_editor_area view" data-material-content="">
+        
+    </div>
+    <!--//첨부파일 삽입 영역-->
+    <div class="comment_btn">
+        <ul>
+            <li><button type="button" class="btn btn_type9 r_rcom " data-btn-vote="" data-course-id="study-cs50-2nd" data-post-id="1281827" data-post-type="COMMENT">추천<em data-vote-count="">3</em></button></li>
+            <li><button type="button" class="btn btn_type9 r_reply" data-btn-reply-list="">답글<em data-replies-count=""></em></button></li>
+        </ul>
+    </div>
+</div>
+<!--에디터영역-->
+<div class="se_wrap" data-wrap-comment-editor=""></div>
+<!--//에디터영역-->
+
+<div class="comment_children_wrap hidden" data-wrap-reply-area="">
+    <div class="se_wrap" data-wrap-reply-editor=""></div>
+    <ul data-reply-list="">
+    </ul>
+</div>
+
+
+</li></ul>
+            </div>
+
+            <!--댓글 paginate : start -->
+            <div class="group_lr mat40">
+                <nav class="paginate" role="navigation" id="_wrap_page_navi" style="">
+                    <div class="inner">
+                        <h4 class="sr_only">Move page</h4>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="pre_end disabled" data-pg-first=""><span class="sr_only">First</span></a>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="pre disabled" data-pg-prev="">Previous</a>
+                        <ul class="page_list" data-pg-number=""><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="1" class="selected">1<span class="sr_only">현재 선택된 페이지</span></a></li></ul>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="next disabled" data-pg-next="">Next</a>
+                        <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="next_end disabled" data-pg-last=""><span class="sr_only">Last</span></a>
+                    </div>
+                </nav>
+            </div>
+            <!--댓글 paginate : end -->
+        </section>
+        
+
+        
+        <div id="_wrap_forum" style="display: none">
+            <ul class="forum_list comment_forum _warp_forum_list"><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50794" class="title">[1조] 6주차 학습인증 해주세요 :)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/AAiNp0IKyF0WrcdgfIg6.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">1조sherry999</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>16</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50800" class="title">[9조] 6주차 -  학습인증 남겨주세요.</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/HVOaACEgfUGJV9nkSjVO.gif" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">9조리드rozeny</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>17</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50821" class="title">[6조] 6주차 학습인증 남겨주세요!</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/KakaoTalk_20210107_183205497.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">6조리드이찬희</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>7</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50823" class="title">[1조_6주차] 학습인증 남겨주세요</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/7V2n8gywkfwvVpBwNXJQ.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">1조리드nauni</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>4</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50841" class="title">[2조] 6주차 학습인증 남겨주세요</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/DF7phNH6HJez5mgDZgIF.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">2조리드꿀오리</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>5</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50845" class="title">[9조 6주차] 학습 인증</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/qh3z8yjLURNErQhe3m7c.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">9조리드myunghoonju</span>
+            
+            <time class="time" datetime="2021.02.20">2021.02.20</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>7</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50867" class="title">[7조]  6주차 학습인증 남겨주세요 :)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb">
+                </div>
+            
+            <span class="username mal5">7조리드노아</span>
+            
+            <time class="time" datetime="2021.02.21">2021.02.21</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>9</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50875" class="title">[1조] 6주차 학습인증 남겨주세요 :)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/mk3mlvrdTTkb7BXub07R.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">1조리드진스타</span>
+            
+            <time class="time" datetime="2021.02.21">2021.02.21</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>5</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50884" class="title">[10조] 6주차 학습 인증 (❁´◡`❁)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/TW70Vm5QeGMFpzo5gtyW.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">10조리드hjhj</span>
+            
+            <time class="time" datetime="2021.02.21">2021.02.21</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>12</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50891" class="title">[6조] 드디어 마지막! 학습인증 &amp; 퀴즈인증 &amp; 라이브 인증</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/6RbwK6hGeM5WUelMzJqK.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">현혜인T1225</span>
+            
+            <time class="time" datetime="2021.02.21">2021.02.21</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>11</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50916" class="title">[9조] 6주차 학습인증남겨주세요 :)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/KakaoTalk_20210109_101627168.jpg" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">9조dada</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>9</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50917" class="title">[4조] 드디어 6주차! 학습인증 고고!</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/image.jpeg" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">4조리드난데없는개발자</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>9</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50924" class="title">[9조] 6주차 학습인증</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/cat_dog.jpg" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">9조리드지정</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>15</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50930" class="title">[3조] 6주차 학습인증 남겨주세요 🍀</a>
+        
+            <div class="user_info edwith">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/1qj3eycZq0fgPvX6kxeF.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">3조리드홍동동</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>20</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50932" class="title">[7조] 6주차 학습인증 부탁드립니다</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/1587126228005.jpg" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">7조리드내일은코딩왕</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>15</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50933" class="title">[2조] 6주차 학습 인증 남겨주세요.</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb">
+                </div>
+            
+            <span class="username mal5">2조리드징니</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>9</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50941" class="title">[8조] 6주차 학습인증 남겨주세요~</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/L36FmANE8fjVTDBPycKj.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">8조리드wish</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>4</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50945" class="title">[3조] 6주차 학습 인증 남겨주세요~</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/KxdBTEfolUPNghPkrBTP.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">3조리드가즈아</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>12</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50953" class="title">[6조]6주차 학습인증 남겨주세요</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/aMyDyG1OOgiwTpj5QSqe.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">6조리드sudhimmeli</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>12</span></dd>
+        </dl>
+    </div>
+</li><!--  #breadcrumb:relate.forum/template/related.forum.item.html -->
+<li>
+    <div class="forum_summary">
+        <a href="https://www.boostcourse.org/study-cs50-2nd/forum/50956" class="title">[1조] 6주차 학습인증 남겨주세요~ :)</a>
+        
+            <div class="user_info">
+        
+            
+                <div class="thumb bgnone">
+                    <img src="./🚀 Data Structure-week6_files/F7OyMcSrdSwpTDYgVKkd.png" width="32" height="32" alt="">
+                </div>
+            
+            <span class="username mal5">1조리드lechae</span>
+            
+            <time class="time" datetime="2021.02.22">2021.02.22</time>
+        </div>
+        <dl class="quick_vote">
+            <dt class="sr_only">추천</dt>
+            <dd title="추천"><span class="ico ico_fl_like"></span><span>0</span></dd>
+            <dt class="sr_only">댓글</dt>
+            <dd title="댓글"><span class="ico ico_fl_cmt"></span><span>13</span></dd>
+        </dl>
+    </div>
+</li></ul>
+
+            <nav class="paginate" role="navigation" id="_wrap_forum_page_navi" style="">
+                <h4 class="sr_only">Move page</h4>
+
+                <div class="inner">
+                    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="pre_end disabled" data-pg-first=""><span class="sr_only">First</span></a>
+                    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="pre disabled" data-pg-prev="">Previous</a>
+                    <ul class="page_list" data-pg-number=""><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="1" class="selected">1<span class="sr_only">현재 선택된 페이지</span></a></li><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="2">2</a></li><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="3">3</a></li><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="4">4</a></li><li><a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" data-pg-number="5">5</a></li></ul>
+                    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="next" data-pg-next="">Next</a>
+                    <a href="https://www.boostcourse.org/study-cs50-2nd/lecture/357738#" class="next_end" data-pg-last=""><span class="sr_only">Last</span></a>
+                </div>
+            </nav>
+        </div>
+        
+
+        <div id="comment_loader"></div>
+    </div>
+    
+    <input type="hidden" id="_serverEnv" value="www">
+</section>
+<script src="./🚀 Data Structure-week6_files/tinymce.min.js"></script>
+<script src="./🚀 Data Structure-week6_files/katex.min.js"></script>
+<script src="./🚀 Data Structure-week6_files/show.entry.browserfied.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var entry = require("/entries/lecture/show.entry.js");
+        entry.initialize({
+            env : {
+                mtType : "/mini.editor"
+            },
+            nextAccess: false,
+            isSequence : false,
+            isAlwaysOpen: true,
+            data : {
+                isUsingHiddenComment: false,    //비밀글 사용 여부
+                courseName : "study-cs50-2nd",
+                lectureId : 357738,
+                bbsId : 72019,
+                nextId : 317827,
+                nextUrl : '/study-cs50-2nd/lecture/317827/?isDesc=false'
+            },
+            hasConstraintOnLectureCompletion : false,
+            completeLecture: false
+        });
+    });
+</script>
+
+            </div>
+            
+<!-- #breadcrumb:boostcourse/common/_footer_course.gsp -->
+
+    <footer id="footer" class="simple new_f">
+        <p class="copyright">© NAVER Connect All Rights Reserved.</p>
+        <button class="btn_to_top" data-btn-scroll-top="" data-nclk="foot.top"><span class="blind">페이지 맨 위로가기</span></button>
+    </footer>
+
+
+
+<!-- lcs file -->
+<script src="./🚀 Data Structure-week6_files/lcslog.js"></script>
+<script src="./🚀 Data Structure-week6_files/_lcs.entry.browserfied.min.js"></script>
+<script>
+    $(document).ready(function(){
+        var entry = require("/entries/common/_lcs.entry.js");
+        entry.initialize({
+            environment: "PRODUCTION",
+            useSti: false
+        });
+    });
+</script>
+<script src="./🚀 Data Structure-week6_files/index.entry.browserfied.min.js"></script>
+<script>
+    $(document).ready(function(){
+
+        //페이지 맨 위로 가기 이벤트
+        $('[data-btn-scroll-top]').on('click', function(e){
+            e.preventDefault();
+            $("html, body").animate({ scrollTop: 0 }, "slow");
+        });
+
+        var entry = require("/entries/footer/index.entry.js");
+        entry.initialize({
+            el : "#_layer",
+            isLogin: true,
+            isClosedMooc: false,
+            hasEmail: true,
+            myInfoLink : "http://www.boostcourse.org/userInfo/base-info"
+        });
+    });
+</script>
+        </div>
+    
+</div>
+
+<script src="./🚀 Data Structure-week6_files/course.entry.browserfied.min.js"></script>
+<script>
+$(document).ready(function(){
+var entry = require( "/entries/layouts/course.entry.js" );
+entry.initialize({
+    messageCode : $("#__MESSAGE_CODE").val(),
+    popupTitle : $("#__MESSAGE_TITLE").val(),
+    message : $("#__MESSAGE").val(),
+    course : "study-cs50-2nd",
+    isCourseUseVote: true
+});
+});
+</script>
+
+<div class="modal_wrap modal_progress" data-selector="progressModal" style="display:none;"><div class="modal_inner"><div class="modal_dimmed"><iframe frameborder="0" src="./🚀 Data Structure-week6_files/saved_resource(2).html" title="for bug fix"></iframe></div><div class="modal_container"><div class="modal_content"><div class="upload_progress modal_progress"><div class="inner"><strong data-selector="message">파일을 올리고 있습니다.</strong><span class="wrap"><span class="mask"></span><span data-selector="gageLevel" style="width:0%"></span></span></div></div></div></div></div></div><div class="modal_wrap modal_progress" data-selector="progressModal" style="display:none;"><div class="modal_inner"><div class="modal_dimmed"><iframe frameborder="0" src="./🚀 Data Structure-week6_files/saved_resource(3).html" title="for bug fix"></iframe></div><div class="modal_container"><div class="modal_content"><div class="upload_progress modal_progress"><div class="inner"><strong data-selector="message">파일을 올리고 있습니다.</strong><span class="wrap"><span class="mask"></span><span data-selector="gageLevel" style="width:0%"></span></span></div></div></div></div></div></div><div class="modal_wrap modal_progress" data-selector="progressModal" style="display:none;"><div class="modal_inner"><div class="modal_dimmed"><iframe frameborder="0" src="./🚀 Data Structure-week6_files/saved_resource(4).html" title="for bug fix"></iframe></div><div class="modal_container"><div class="modal_content"><div class="upload_progress modal_progress"><div class="inner"><strong data-selector="message">파일을 올리고 있습니다.</strong><span class="wrap"><span class="mask"></span><span data-selector="gageLevel" style="width:0%"></span></span></div></div></div></div></div></div><!-- #breadcrumb:footer/template/footer.modal.container.html -->
+<div class="modal_wrap" id="_modal_container" style="display:none;">
+    <div class="modal_inner">
+        <div class="modal_dimmed"><iframe frameborder="0" src="./🚀 Data Structure-week6_files/saved_resource(5).html" title="버그픽스용"></iframe></div>
+        <div class="modal_container" data-modal-container="" data-md-content=""></div>
+    </div>
+</div><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div></body></html>
