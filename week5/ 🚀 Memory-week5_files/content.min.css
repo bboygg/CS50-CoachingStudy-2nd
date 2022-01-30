@@ -1,0 +1,388 @@
+@charset "UTF-8";
+@font-face {
+	font-family: NanumSquareWebFont-R;
+	font-style: normal;
+	font-weight: 300;
+	src: url(https://ssl.pstatic.net/static/connectfdn/edwith/font/NanumSquare_se_R.eot);
+	src: url(https://ssl.pstatic.net/static/connectfdn/edwith/font/NanumSquare_se_R.woff2) format("woff2");
+}
+
+* {
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+body {
+	margin: 0;
+	padding: 10px;
+	background-color: #FFF;
+	font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.8;
+	color: #666;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
+	scrollbar-3dlight-color: #F0F0EE;
+	scrollbar-arrow-color: #676662;
+	scrollbar-base-color: #F0F0EE;
+	scrollbar-darkshadow-color: #DDD;
+	scrollbar-face-color: #E0E0DD;
+	scrollbar-highlight-color: #F0F0EE;
+	scrollbar-shadow-color: #F0F0EE;
+	scrollbar-track-color: #F5F5F5;
+}
+
+body p {
+	margin: 0;
+}
+
+td, th {
+	font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+	font-size: 14px;
+}
+
+.mce-object {
+	border: 1px dotted #3A3A3A;
+	background: #d5d5d5 url(https://ssl.pstatic.net/static/connectfdn/edwith/images/tinymce_skin/img/object.gif) no-repeat center;
+}
+
+.mce-pagebreak {
+	display: block;
+	width: 100%;
+	height: 5px;
+	margin-top: 15px;
+	border: 0;
+	border: 1px dashed #666;
+	cursor: default;
+	page-break-before: always;
+}
+
+@media print {
+	.mce-pagebreak {
+		border: 0;
+	}
+}
+
+.mce-item-anchor {
+	display: inline-block;
+	width: 9px !important;
+	height: 9px !important;
+	border: 1px dotted #3A3A3A;
+	background: #d5d5d5 url(https://ssl.pstatic.net/static/connectfdn/edwith/images/tinymce_skin/img/anchor.gif) no-repeat center;
+	cursor: default;
+	-webkit-user-select: all;
+	-webkit-user-modify: read-only;
+	-moz-user-select: all;
+	-moz-user-modify: read-only;
+	-ms-user-select: all;
+	    user-select: all;
+	user-modify: read-only;
+}
+
+.mce-nbsp {
+	background: #AAA;
+}
+
+.editor_reset {
+	cursor: text;
+}
+
+.editor_reset h4 {
+	margin: 1.33em 0;
+	font-weight: bold;
+}
+
+.editor_reset p {
+	color: #333;
+}
+
+.editor_reset hr {
+	margin: 25px 0;
+	border: 0;
+	border-top: 1px solid #e8e8e8;
+}
+
+.editor_reset ul, .editor_reset ol {
+	display: block;
+	padding-left: 30px;
+}
+
+.editor_reset ul li {
+	list-style: disc;
+}
+
+.editor_reset ul ul li {
+	list-style: circle;
+}
+
+.editor_reset ul ul ul li {
+	list-style: square;
+}
+
+.editor_reset ol li,
+.editor_reset ol ul ol li {
+	list-style: decimal;
+}
+
+.editor_reset ol ul li {
+	list-style: circle;
+}
+
+.editor_reset ol ul ul li {
+	list-style: square;
+}
+
+.editor_reset em {
+	font-style: italic;
+}
+
+.editor_reset img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+.editor_reset a,
+.editor_reset a:hover,
+.editor_reset a:active,
+.editor_reset a:focus {
+	color: #010101 !important;
+	text-decoration: underline !important;
+}
+
+.editor_reset a span,
+.editor_reset a:hover span,
+.editor_reset a:active span,
+.editor_reset a:focus span {
+	color: #010101 !important;
+}
+
+.editor_reset * + ul, .editor_reset * + ol {
+	margin: 10px 0 0;
+}
+
+.editor_reset pre {
+	padding: 14px 20px;
+	background-color: #333;
+	font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+}
+
+.editor_reset pre code {
+	font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+	color: #FFF;
+}
+
+.editor_reset pre .ph {
+	display: block;
+	color: #999;
+}
+
+.editor_reset b, .editor_reset strong {
+	font-weight: bold;
+}
+
+.editor_reset .u_rmcplayer a {
+	text-decoration: none !important;
+	cursor: pointer !important;
+}
+
+.editor_reset .u_rmcplayer .u_rmcplayer_progress .u_rmc_definition_ly li a {
+	color: #fff !important;
+}
+
+.editor_reset .u_rmcplayer .u_rmcplayer_progress .u_rmc_definition_ly li a:hover {
+	color: #0aeb7f !important;
+}
+
+.mce-match-marker {
+	background: #AAA;
+	color: #fff;
+}
+
+.mce-match-marker-selected {
+	background: #39f;
+	color: #fff;
+}
+
+.mce-spellchecker-word {
+	border-bottom: 2px solid red;
+	cursor: default;
+}
+
+.mce-spellchecker-grammar {
+	border-bottom: 2px solid green;
+	cursor: default;
+}
+
+.mce-item-table, .mce-item-table td, .mce-item-table th, .mce-item-table caption {
+	border: 1px dashed #BBB;
+}
+
+td.mce-item-selected, th.mce-item-selected {
+	background-color: #39f !important;
+}
+
+.mce-edit-focus {
+	outline: 1px dotted #333;
+}
+
+.mce-content-body *[contentEditable=false] *[contentEditable=true]:focus {
+	outline: 2px solid #2d8ac7;
+}
+
+.mce-content-body *[contentEditable=false] *[contentEditable=true]:hover {
+	outline: 2px solid #7acaff;
+}
+
+.mce-content-body *[contentEditable=false][data-mce-selected] {
+	outline: 2px solid #2d8ac7;
+}
+
+.mce-resize-bar-dragging {
+	background-color: blue;
+	opacity: .25;
+	filter: alpha(opacity=25);
+	zoom: 1;
+}
+
+p.ph {
+	color: #999 !important;
+}
+
+.mce-content-body {
+	min-height: 0 !important;
+}
+
+.mce-content-body.with_live {
+	padding: 0;
+}
+
+.mce-content-body a, .mce-content-body a:hover, .mce-content-body a:active, .mce-content-body a:focus {
+	color: #010101 !important;
+	text-decoration: underline !important;
+}
+
+.mce-content-body a span, .mce-content-body a:hover span, .mce-content-body a:active span, .mce-content-body a:focus span {
+	color: #010101 !important;
+}
+
+.mce-content-body pre {
+	padding: 14px 20px !important;
+	min-height: 120px;
+	background-color: #333;
+	font-family: NanumSquareWebFont-R, "NanumSquareWebFont", "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+	color: #FFF;
+}
+
+.mce-content-body pre .ph {
+	color: #999;
+}
+
+.mce-content-body.with_live p {
+	color: #828c96  !important;
+	font-size: 13px;
+	line-height: 20px;
+	margin: 0;
+}
+
+.mce-content-body.with_live.writing p {
+	color: #25292F;
+}
+
+.mce_video {
+	position: relative;
+}
+
+.mce_video .preview_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.mce_video .preview_box .play_time {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 70px;
+	margin: -44px 0 0 -35px;
+	text-decoration: none;
+	z-index: 100;
+}
+
+.mce_video .preview_box .play_time .time {
+	display: block;
+	font-size: 14px;
+	color: #fff;
+	text-decoration: none;
+	font-family: "나눔고딕", NanumGothic, "맑은 고딕", Malgun Gothic, "Apple SD Gothic Neo", "돋움", dotum, Helvetica, arial, sans-serif;
+	line-height: 16px;
+	text-align: center;
+}
+
+.mce_video .preview_box .play_time .time:before {
+	display: block;
+	overflow: hidden;
+	width: 44px;
+	height: 56px;
+	margin: 0 auto 16px;
+	background: url(https://ssl.pstatic.net/static/connectfdn/edwith/images/tinymce_skin/img/bt_play.png) no-repeat;
+	vertical-align: top;
+	content: '';
+}
+
+.mce_video .preview_box .dimmed_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: #000;
+	opacity: 0.4;
+	filter: alpha(opacity=40);
+}
+
+.mce_video .upload_progress {
+	height: 378px;
+	position: relative;
+	display: table;
+	min-height: 150px;
+	background-color: #f7f7f7;
+	cursor: default;
+	width: 100%;
+}
+
+.mce_video .upload_progress .progress_inner {
+	display: table-cell;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.mce_video .upload_progress .check_info {
+	text-align: center;
+}
+
+.mce_video .upload_progress .check_info:before {
+	display: block;
+	overflow: hidden;
+	width: 64px;
+	height: 80px;
+	margin: 0 auto 16px;
+	background: url(https://ssl.pstatic.net/static/connectfdn/edwith/images/tinymce_skin/img/ic_convert.png) no-repeat;
+	vertical-align: top;
+	content: '';
+}
+
+.mce_video .upload_progress .check_info .check_sjt {
+	font-size: 16px;
+	font-weight: normal;
+	color: #00c73c;
+	letter-spacing: -1px;
+	line-height: 24px;
+}
+/*# sourceMappingURL=content.min.css.map */
