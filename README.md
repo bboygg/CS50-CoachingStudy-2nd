@@ -25,8 +25,13 @@
 ### Week 6
 
 
+
 ### Conclusion
-![certification](/resources/certificate_A20210308-997053.pdf)
+
+
+
+### Certification
+![certification](/resources/certificate_George.jpg)
 
 
 
